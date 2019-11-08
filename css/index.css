@@ -1,9 +1,10 @@
 .home_header .home_top {
   width: 100%;
-  background: #000; }
+  background: #000;
+  display: flex;
+  justify-content: space-between; }
   .home_header .home_top ul {
-    height: 32px;
-    width: 800px; }
+    display: flex; }
   .home_header .home_top ul li {
     width: 30px;
     height: 20px;

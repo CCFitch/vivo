@@ -1,15 +1,31 @@
 .home_header .home_top {
   width: 100%;
-  background: #000;
+  background: #333;
   display: flex;
   justify-content: space-between; }
   .home_header .home_top ul {
-    display: flex; }
+    display: flex;
+    justify-content: flex-start; }
   .home_header .home_top ul li {
-    width: 30px;
-    height: 20px;
-    text-align: center; }
+    height: 32px; }
     .home_header .home_top ul li a {
+      line-height: 32px;
       text-align: center;
-      float: left;
+      color: #ccc; }
+    .home_header .home_top ul li a:hover {
       color: #999; }
+  .home_header .home_top .home_top_r {
+    margin-right: 48px; }
+    .home_header .home_top .home_top_r .home_goods {
+      margin-right: 42px; }
+    .home_header .home_top .home_top_r .home_login {
+      margin-right: 18px; }
+    .home_header .home_top .home_top_r .home_rest {
+      margin-left: 18px; }
+    .home_header .home_top .home_top_r span {
+      margin-top: 7px;
+      color: #999; }
+  .home_header .home_top .home_top_l {
+    margin-left: 48px; }
+    .home_header .home_top .home_top_l li {
+      margin-right: 42px; }

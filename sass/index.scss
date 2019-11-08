@@ -1,3 +1,46 @@
-header{
-    width:100px;
+.home_header{
+    .home_top{
+        width:100%;
+        background:#333;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            justify-content: flex-start;            
+        }
+        ul li {
+            height:32px;
+            a{
+                line-height:32px;
+                text-align: center;
+                color:#ccc;
+            }
+            a:hover{
+                color:#999;
+            }
+        }
+        .home_top_r{
+            margin-right:48px;
+            .home_goods{
+                margin-right:42px;
+            }
+            .home_login{
+                margin-right:18px;
+                
+            }
+            .home_rest{
+                margin-left:18px;
+            }
+            span{
+                margin-top:7px;
+                color:#999;
+            }
+        }
+        .home_top_l{
+            margin-left:48px;
+            li{
+                margin-right:42px;
+            }
+        }
+    }
 }

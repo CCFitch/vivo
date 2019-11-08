@@ -1,0 +1,341 @@
+.wrap {
+  width: 1200px;
+  margin: 100px auto 0; }
+
+.goods_header {
+  height: 66px;
+  margin-bottom: 19px;
+  background-color: #fff;
+  text-align: center; }
+  .goods_header h2 {
+    float: left;
+    font-size: 26px;
+    margin-left: 500px;
+    line-height: 66px;
+    font-weight: bold; }
+  .goods_header .goods_shop {
+    float: right;
+    line-height: 66px;
+    margin-right: 10px;
+    color: #000;
+    font-size: 14px; }
+  .goods_header .goods_shop:hover > a {
+    color: red; }
+
+.goods_title {
+  height: 64px;
+  background: #fff;
+  padding: 0 26px;
+  line-height: 64px; }
+  .goods_title .goods_check1 {
+    float: left;
+    width: 175px;
+    height: 64px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle; }
+    .goods_title .goods_check1 #goods_allcheckbox1 {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle; }
+  .goods_title .goods_name {
+    text-align: center;
+    float: left;
+    width: 250px;
+    font-size: 14px;
+    color: #333; }
+  .goods_title .goods_price {
+    text-align: center;
+    float: left;
+    width: 168px;
+    font-size: 14px;
+    color: #333; }
+  .goods_title .goods_amount {
+    text-align: center;
+    float: left;
+    width: 111px;
+    font-size: 14px;
+    color: #333; }
+  .goods_title .goods_discounts {
+    text-align: center;
+    float: left;
+    width: 111px;
+    font-size: 14px;
+    color: #333; }
+  .goods_title .goods_integral {
+    text-align: center;
+    float: left;
+    width: 111px;
+    font-size: 14px;
+    color: #333; }
+  .goods_title .goods_subtotal {
+    text-align: center;
+    float: left;
+    width: 111px;
+    font-size: 14px;
+    color: #333; }
+  .goods_title .goods_operate {
+    text-align: center;
+    float: left;
+    width: 111px;
+    font-size: 14px;
+    color: #333; }
+
+.goods_list {
+  display: block; }
+  .goods_list .goods_check2 {
+    float: left;
+    height: 152px;
+    vertical-align: middle;
+    line-height: 152px;
+    margin-left: 26px; }
+    .goods_list .goods_check2 .goods_box {
+      width: 20px;
+      height: 20px; }
+  .goods_list .goods_img {
+    float: left;
+    width: 145px;
+    height: 152px;
+    vertical-align: middle;
+    margin-right: 10px; }
+    .goods_list .goods_img img {
+      border: 1px solid #000;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 25px auto; }
+  .goods_list .goods_megs {
+    float: left;
+    width: 250px;
+    height: 152px;
+    display: flex;
+    flex-direction: column; }
+    .goods_list .goods_megs h4 {
+      height: 20px;
+      line-height: 134px;
+      font-size: 14px; }
+  .goods_list .goods_singleP {
+    float: left;
+    width: 168px;
+    height: 152px;
+    line-height: 152px;
+    text-align: center; }
+  .goods_list .goods_numaccount {
+    float: left;
+    width: 111px;
+    height: 152px; }
+    .goods_list .goods_numaccount .goods_del {
+      float: left;
+      width: 32px;
+      height: 32px;
+      border: 1px solid #000;
+      line-height: 32px;
+      text-align: center;
+      margin: 60px 0;
+      cursor: pointer; }
+    .goods_list .goods_numaccount .goods_numinp {
+      float: left;
+      width: 40px;
+      height: 32px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      line-height: 32px;
+      text-align: center;
+      margin: 60px 0; }
+    .goods_list .goods_numaccount .goods_add {
+      float: left;
+      width: 32px;
+      height: 32px;
+      border: 1px solid #000;
+      line-height: 32px;
+      text-align: center;
+      margin: 60px 0;
+      cursor: pointer; }
+  .goods_list .goods_onsale {
+    float: left;
+    width: 111px;
+    height: 152px;
+    text-align: center;
+    line-height: 152px; }
+  .goods_list .goods_send {
+    float: left;
+    width: 111px;
+    height: 152px;
+    text-align: center;
+    line-height: 152px; }
+  .goods_list .goods_allP {
+    float: left;
+    width: 111px;
+    height: 152px;
+    text-align: center;
+    line-height: 152px; }
+  .goods_list .goods_todo {
+    float: left;
+    width: 111px;
+    height: 152px;
+    text-align: center;
+    line-height: 152px;
+    display: flex;
+    flex-direction: column; }
+    .goods_list .goods_todo .goods_collect {
+      height: 19px;
+      cursor: pointer; }
+    .goods_list .goods_todo .goods_remove {
+      height: 19px;
+      cursor: pointer; }
+  .goods_list .goods_present {
+    float: left;
+    width: 1091px;
+    height: 67px;
+    box-sizing: border-box;
+    margin: 5px 25px 5px 60px;
+    padding: 5px 25px;
+    background-color: #f7f7f5;
+    line-height: 67px;
+    font-size: 14px; }
+  .goods_list .goods_present > a:hover {
+    color: red; }
+
+.goods_alltodo {
+  width: 1200px;
+  margin: 100px auto 0;
+  height: 98px;
+  margin: 19px 0 37px 0;
+  background-color: #fff;
+  padding: 0 26px;
+  box-sizing: border-box; }
+  .goods_alltodo .goods_alltodoL {
+    float: left;
+    line-height: 98px; }
+    .goods_alltodo .goods_alltodoL .goods_check2 {
+      float: left;
+      width: 62px;
+      height: 98px;
+      margin-right: 30px;
+      font-weight: 400;
+      font-size: 16px; }
+      .goods_alltodo .goods_alltodoL .goods_check2 #goods_allcheckbox2 {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle; }
+    .goods_alltodo .goods_alltodoL .goods_allremove {
+      float: left;
+      width: 112px;
+      height: 98px;
+      font-weight: 400;
+      font-size: 16px;
+      margin-right: 30px;
+      cursor: pointer; }
+    .goods_alltodo .goods_alltodoL .goods_allcollect {
+      float: left;
+      width: 80px;
+      height: 98px;
+      font-weight: 400;
+      font-size: 16px;
+      margin-right: 30px;
+      cursor: pointer; }
+  .goods_alltodo .goods_alltodoR {
+    float: right;
+    width: 558px;
+    height: 87px;
+    box-sizing: border-box;
+    text-align: right;
+    vertical-align: middle;
+    padding-top: 18px; }
+    .goods_alltodo .goods_alltodoR .goods_alltodoR1 {
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px; }
+      .goods_alltodo .goods_alltodoR .goods_alltodoR1 .goods_numselect {
+        color: red; }
+      .goods_alltodo .goods_alltodoR .goods_alltodoR1 .goods_account1 {
+        color: red;
+        font-size: 33px; }
+    .goods_alltodo .goods_alltodoR .goods_alltodoR2 {
+      height: 32px;
+      line-height: 32px;
+      color: #999;
+      font-size: 14px; }
+  .goods_alltodo .goods_pay {
+    float: right;
+    width: 170px;
+    height: 46px;
+    background-color: #fa0e49;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 25px;
+    margin-left: 25px; }
+
+.goods_guess {
+  margin-top: 37px; }
+  .goods_guess h2 {
+    font-size: 20px;
+    margin-bottom: 25px; }
+  .goods_guess .goods_likeList {
+    display: flex;
+    column-count: 4;
+    flex-wrap: wrap; }
+    .goods_guess .goods_likeList li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 24%;
+      height: 380px;
+      margin: 0 5px; }
+      .goods_guess .goods_likeList li img {
+        width: 172px;
+        height: 172px;
+        margin-top: 43px; }
+      .goods_guess .goods_likeList li .goods_likeName {
+        height: 30px;
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 30px; }
+      .goods_guess .goods_likeList li .goods_likeMeg {
+        height: 26px;
+        margin: 1px 15px 40px;
+        font-size: 12px;
+        line-height: 30px; }
+      .goods_guess .goods_likeList li .goods_likePay {
+        height: 16px;
+        line-height: 16px;
+        font-size: 16px;
+        color: red; }
+
+.goods_service {
+  background-color: #fff; }
+  .goods_service ul {
+    margin: 30px auto 70px;
+    width: 1200px;
+    overflow: hidden; }
+    .goods_service ul li {
+      float: left;
+      width: 300px;
+      height: 90px;
+      text-align: center;
+      line-height: 90px;
+      font-size: 20px; }
+      .goods_service ul li .iconfont {
+        font-size: 30px;
+        margin-right: 5px; }
+
+.goods_help {
+  width: 50px;
+  height: 200px;
+  background-color: #fff;
+  position: fixed;
+  right: 0px;
+  bottom: 50px; }
+  .goods_help div {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px; }
+  .goods_help .iconfont {
+    font-size: 33px; }
+
+/*# sourceMappingURL=goods.css.map */

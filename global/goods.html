@@ -1,12 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/goods.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+
 </head>
-<body>
-    
+
+<body style="background: #f7f7f7;">
+    <div class="wrap">
+        <div class="goods_nav"></div>
+        <div class="goods_header">
+            <h2>我的购物车</h2>
+            <span class="goods_shop"><a href="#">继续购物 ></a></span>
+        </div>
+        <div class="goods_title">
+            <div class="goods_check1">
+                <input type="checkbox" name="" id="goods_allcheckbox1">
+                <label for="goods_allcheckbox1">全选</label>
+            </div>
+            <span class="goods_name">商品名称</span>
+            <span class="goods_price">价格(元)</span>
+            <span class="goods_amount">数量</span>
+            <span class="goods_discounts">优惠</span>
+            <span class="goods_integral">赠送积分</span>
+            <span class="goods_subtotal">小计(元)</span>
+            <span class="goods_operate">操作</span>
+        </div>
+        <ul class="goods_list">
+            <li style="height: 247px;background-color: #fff;margin-bottom: 2px;">
+                <div class="goods_check2">
+                    <input type="checkbox" name="" class="goods_box">
+                </div>
+                <div class="goods_img">
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                </div>
+                <div class="goods_megs">
+                    <h4>Z5x 6GB+64GB 极夜黑 </h4>
+                    <h4>颜色：极夜黑</h4>
+                </div>
+                <p class="goods_singleP">1398.00</p>
+                <div class="goods_numaccount">
+                    <div class="goods_del">-</div>
+                    <div class="goods_numinp">1</div>
+                    <div class="goods_add">+</div>
+                </div>
+                <p class="goods_onsale">0.00</p>
+                <span class="goods_send">1398</span>
+                <span class="goods_allP">1398.00</span>
+                <div class="goods_todo">
+                    <span class="goods_collect">加入到收藏夹</span>
+                    <span class="goods_remove">删除</span>
+                </div>
+                <div class="goods_present">【赠品】：<a href="#">vivo XE680原装耳机</a></div>
+            </li>
+            <li style="height: 247px;background-color: #fff;margin-bottom: 2px;">
+                <div class="goods_check2">
+                    <input type="checkbox" name="" class="goods_box">
+                </div>
+                <div class="goods_img">
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                </div>
+                <div class="goods_megs">
+                    <h4>Z5x 6GB+64GB 极夜黑 </h4>
+                    <h4>颜色：极夜黑</h4>
+                </div>
+                <p class="goods_singleP">1398.00</p>
+                <div class="goods_numaccount">
+                    <div class="goods_del">-</div>
+                    <div class="goods_numinp">1</div>
+                    <div class="goods_add">+</div>
+                </div>
+                <p class="goods_onsale">0.00</p>
+                <span class="goods_send">1398</span>
+                <span class="goods_allP">1398.00</span>
+                <div class="goods_todo">
+                    <span class="goods_collect">加入到收藏夹</span>
+                    <span class="goods_remove">删除</span>
+                </div>
+                <div class="goods_present">【赠品】：<a href="#">vivo XE680原装耳机</a></div>
+            </li>
+        </ul>
+        <div class="goods_alltodo">
+            <div class="goods_alltodoL">
+                <div class="goods_check2">
+                    <input type="checkbox" name="" id="goods_allcheckbox2">
+                    <label for="goods_allcheckbox2">全选</label>
+                </div>
+                <span class="goods_allremove">删除选中的商品</span>
+                <span class="goods_allcollect">移入收藏夹</span>
+            </div>
+            <button class="goods_pay">去结算</button>
+            <div class="goods_alltodoR">
+                <p class="goods_alltodoR1">已选商品<i class="goods_numselect">1</i>件，合计(不含运费)：<strong
+                        class="goods_account1">¥7396.00</strong>
+                </p>
+                <p class="goods_alltodoR2">(商品总价：<span class="goods_account2">¥ 7596.00</span> 优惠:<span
+                        class="goods_reduce">¥ 200.00</span>)</p>
+            </div>
+        </div>
+        <div class="goods_guess">
+            <h2>猜你喜欢</h2>
+            <ul class="goods_likeList">
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+                <li>
+                    <img src="../images/Y/gouwuchePhone.jpg" alt="">
+                    <div class="goods_likeName">iQOO Pro 8GB+128GB 竞速黑</div>
+                    <div class="goods_likeMeg">骁龙855 Plus，44W超快闪充，4800万超广角...</div>
+                    <p class="goods_likePay">￥3198</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="goods_service">
+        <ul>
+            <li><i class="iconfont icon-guanfangzhengpin"></i>官方正品</li>
+            <li><i class="iconfont icon-kuaidi"></i>顺丰极速达</li>
+            <li><i class="iconfont icon-shouhoufuwuzhichi"></i>全国联保</li>
+            <li><i class="iconfont icon-ziyuan"></i>镭雕定制</li>
+        </ul>
+    </div>
+    <div class="goods_help">
+        <div class="goods_artificial"><i class="iconfont icon-erji1"></i></div>
+        <div class="goods_helpcenter"><i class="iconfont icon-duanxin"></i></div>
+        <div class="goods_write"><i class="iconfont icon-shouji"></i></div>
+        <div class="goods_up"><i class="iconfont icon-xiangshang"></i></div>
+    </div>
 </body>
+
 </html>

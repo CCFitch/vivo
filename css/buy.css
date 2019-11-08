@@ -1,0 +1,224 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:#000;
+}
+li{
+	list-style: none;
+}
+#b-wrap{
+	width:1200px;
+	margin:0 auto;
+	font-size: 13px;
+}
+#b-header{
+	height:100px;
+	background: #333333;
+}
+
+
+#b-type{
+	height:72px;
+	line-height: 72px;
+	
+}
+#b-type span{
+	margin:0 10px;
+	color:#ccc;
+}
+#b-type a:last-child{
+	color:#999;
+}
+
+
+#b-main{
+	height:1990px;
+	overflow: hidden;
+}
+#b-main .leftbox{
+	float:left;
+	width:515px;
+	height:1990px;
+}
+#b-main .leftbox p{
+	text-align: center;
+	color:#666666;
+	margin:35px 0 15px 0;
+}
+#b-main .bigImg{
+	width:515px;
+	height:515px;
+	box-sizing: border-box;
+}
+#b-main .bigImg img{
+	width:515px;
+	height:515px;
+}
+#b-main .smallImg{
+	overflow: hidden;
+	height:87px;
+	margin:50px 0 15px 0;
+	text-align: center;
+}
+#b-main .smallImg li{
+	list-style: none;
+	display: inline-block;
+}
+#b-main .smallImg img{
+	width:85px;
+	height:85px;
+}
+
+#b-main .rigthbox{
+	float:right;
+	width:510px;
+	height:1990px;
+}
+#b-main .rigthbox h1{
+	font-size:34px;
+	font-weight:500;
+	margin-top:10px;
+}
+#b-main .rigthbox p{
+	font-size:14px;
+	margin-top:10px;
+}
+.summary{
+	height:122px;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	margin:40px 0 15px 0;
+}
+ #b-main .summary .price{
+	font-size: 40px;
+	line-height:118px;
+	color:#f51200;
+	margin-top:0;
+}
+.support{
+	overflow: hidden;
+	font-size:16px;
+	padding: 10px 0 30px 0;
+}
+.support ul{
+	display:inline-block;
+}
+.support ul li{
+	display:inline-block;
+	margin-left:20px;
+	padding-bottom: 24px;
+}
+.message dt{
+	font-size:19px;
+	margin:20px 0;
+}
+.message dd{
+	display:inline-block;
+	font-size: 15px;
+	width:243px;
+	height:58px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	/* border:solid 0.5px #ccc; */
+	border-radius: 6px;
+}
+.yanse dd{
+	border:solid 1px #ccc;
+}
+.version dd{
+	border:solid 1px #ccc;	
+}
+.instalment dd{border:solid 1px #ccc;}
+.message .version{
+	line-height: 58px;
+}
+.message .yanse{
+	line-height: 58px;
+}
+#b-main .message .yanse dd p{
+	display:inline-block;
+	background: pink;
+	width:18px;
+	height:18px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-top:0px;
+	margin-right:5px;
+}
+.message .amount dd{
+	border:none;
+}
+.message .amount dd input{
+	line-height: 58px;
+	width:74px;
+	height:55px;
+	text-align: center;
+	font-size: 25px;
+	outline: none;
+	float:left;
+}
+.message .instalment dd{
+	width:245px;
+	height:90px;
+	font-size:15px;
+	
+}
+.message .instalment h4{
+	font-weight: 500;
+	margin-top:24px;
+}
+.message .instalment span{
+	font-size:13px;
+}
+.bottombox{
+	width:510px;
+	height:150px;
+	border-top:solid 1px #ccc;
+	margin-top:50px;
+	padding:58px 0 86px;
+}
+#b-main .rigthbox p{
+	display:inline-block;
+}
+#b-main .rigthbox .smallPrice {
+	font-size:25px;
+	color:#f51200;
+}
+#b-main .rigthbox button{
+	width:170px;
+	height:46px;
+	background:#353434;
+	border-radius:35px;
+	color:#fff;
+	border:none;
+	outline: none;
+	margin-top:58px;
+}
+#b-main .rigthbox .btn2{
+	background: #ff0c53;
+	margin-left:27px;
+}
+
+
+
+
+#b-banner{
+	height:424px;
+	background:#ccc;
+}
+.b-title{
+	height:102px;
+	background:pink;
+}
+.b-imgboxs{
+	height:290px;
+	background: #63A35C;
+}
+#b-bar{
+	height:80px;
+	background:#999;
+}

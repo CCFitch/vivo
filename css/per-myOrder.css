@@ -1,0 +1,75 @@
+#top {
+  height: 68px;
+  background-color: blue;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#main {
+  background-color: #f7f7f5;
+  padding-bottom: 30px;
+}
+#main .main-top {
+  height: 72px;
+}
+#main .main-top a {
+  font-size: 14px;
+  color: #333;
+  line-height: 72px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+#main .main-wrap .m-meun {
+  float: left;
+  margin: 0 15px 0 0;
+  background-color: #fff;
+  width: 200px;
+}
+#main .main-wrap .m-meun img {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  margin: 28px 28px 0 28px;
+}
+#main .main-wrap .m-meun li {
+  text-align: center;
+  margin: 12px 0;
+}
+#main .main-wrap .m-meun ul .buns-number {
+  color: red;
+}
+#main .main-wrap .m-meun dl {
+  margin-bottom: 70px;
+}
+#main .main-wrap .m-meun dl dt {
+  color: #333;
+  margin: 28px 0 10px 0;
+  padding-left: 64px;
+}
+#main .main-wrap .m-meun dl dd {
+  padding: 4px 0;
+  margin: 2px 0;
+}
+#main .main-wrap .m-meun dl dd:hover {
+  background: pink;
+  color: red;
+}
+#main .main-wrap .m-meun dl dd a {
+  padding: 1px 0 2px 64px;
+  color: #888;
+  font-size: 14px;
+}
+#main .main-wrap .m-con {
+  float: left;
+  padding: 0 30px 30px;
+  width: 925px;
+  min-height: 952px;
+  background-color: #fff;
+}
+#main .main-wrap .m-con h3 {
+  text-align: center;
+  padding-top: 35px;
+}

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+// 头部站高
+#top{
+    height: 68px;
+    background-color: blue;
+}
+
+//版心
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+//主题内容
+#main{
+    background-color: #f7f7f5;
+    padding-bottom: 30px;
+    & .main-top{
+        height: 72px;
+       & a{ 
+            font-size: 14px;
+            color: #333;
+            line-height: 72px;
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+    }
+    & .main-wrap .m-meun{
+        float: left;
+        margin:0 15px 0 0;
+        background-color: #fff;
+        width: 200px;
+        & img{
+            width: 142px;
+            height: 142px;
+            border-radius: 50%;
+            margin: 28px 28px 0 28px;
+        }
+        & li{
+            text-align: center;
+            margin: 12px 0;
+        }
+        & ul .buns-number{
+            color: red;
+         } 
+        & dl{
+            margin-bottom: 70px;   
+         & dt{
+             color: #333;
+             margin: 28px 0 10px 0; 
+             padding-left: 64px;             
+         }
+         & dd{ 
+            padding:4px 0 ;
+            margin: 2px 0;
+            &:hover{
+                 background: pink;
+                 color: red;
+            }       
+             & a{
+                padding:1px 0 2px 64px;
+                color: #888;
+                font-size: 14px;             
+                }
+            } 
+        } 
+    }
+ 
+    & .main-wrap .m-con{
+        float: left;
+        padding: 0 30px 30px;
+        width: 925px;
+        min-height: 952px;
+        background-color: #fff;
+       & h3{
+           text-align: center;
+           padding-top: 35px;
+       }
+    }
+}

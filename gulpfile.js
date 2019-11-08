@@ -5,16 +5,15 @@ const uglify = require('gulp-uglify')
 const minifyCss = require('gulp-minify-css')
 const rename = require('gulp-rename')
 const imagemin = require('gulp-imagemin')
-const babel = require('gulp-babel')
 const connect = require('gulp-connect')
 const sass = require('gulp-sass')
 // const reload = require('gulp-load-plugins')
 
-gulp.task('scs',function(){
-    return gulp.src('./sass/c.scss')
+gulp.task('sass',function (){
+    return gulp.src('./sass/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./css/'))
-})
+    .pipe(gulp.dest('./css'))
+});
 
 //合并css 压缩css
 gulp.task('concat1',function(){
@@ -27,7 +26,7 @@ gulp.task('concat1',function(){
 })
 //合并js 压缩js
 gulp.task('concat2',function(){
-    return gulp.src('./js/*.js')
+    return gulp.src(['./js/*.js','!./js/jquery*.js'])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
@@ -35,7 +34,7 @@ gulp.task('concat2',function(){
 })
 //压缩html
 gulp.task('minifyHtml',function(){
-    return gulp.src('./main.html')
+    return gulp.src('./index.html')
     .pipe(minifyHtml())
     .pipe(gulp.dest('./dist/'))
     .pipe(connect.reload())
@@ -69,6 +68,7 @@ gulp.task('watch',function(){
     gulp.watch('./js/*.js',gulp.series('concat2'))
     gulp.watch('./*.html',gulp.series('minifyHtml'))
     gulp.watch('./images/*.*',gulp.series('imagemin'))
+    gulp.watch('./sass/*.scss',gulp.series('sass'));
 })
 //自动加载
 gulp.task('reload',function(done){
@@ -85,6 +85,7 @@ gulp.task('run',gulp.series('reload','watch'))
 
 //打包一块执行
 gulp.task('build',gulp.parallel(
+    gulp.series('sass'),
     gulp.series('concat1'),
     gulp.series('concat2'),
     gulp.series('minifyHtml'),

@@ -1,3 +1,65 @@
+@mixin phones{
+    display: none;
+    width:100%;
+    position: absolute;
+    top:68px;
+    left:0;
+    height:315px;
+    background:white;
+    ._list{
+        margin-left:150px;
+        margin-top:28px;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        li{
+            position: relative;
+            width:180px;
+            height:194px;
+            text-align: center;
+            img{
+                position: absolute;
+                left:80px;
+                top:10px;
+            }
+            p{
+                line-height:18px;
+                margin-top:200px;
+                color:#999;
+                font-size:16px;
+            }
+            span{
+                padding-top:10px;
+                line-height:16px;
+                display:block;
+                color:#415FFF;
+                font-size:12px;
+            }
+        }
+    }
+    .home_compl{
+        float: left;
+        margin:60px 0 0 0;
+        div{
+            text-align: center;
+            color:#333;
+            line-height:30px;
+            padding:10px 30px;
+            margin-bottom:15px;
+            border-radius: 26px;
+            background:#F1F1F1;
+            font-size:14px;
+            .icon-cedaohang-mokuai,.icon-shouji{
+                line-height:30px;
+                font-size:30px;
+            }
+        }
+        div:hover{
+            background:#415FFF;
+            color:white;
+        }
+    }
+}
 .home_header{
     position: relative;
     overflow: hidden;
@@ -46,13 +108,13 @@
         }
     }
 }
-.home_inner{
-        width:1200px;
+.home_guide{
+        padding:0 80px;
         position:absolute;
-        left:80px;
+        left:0px;
         top:32px;
-        z-index: 1;
         .home_nav{
+            // position: relative;
             height:68px;
             line-height: 68px;
             display: flex;
@@ -61,10 +123,12 @@
                 font-size:26px;
                 font-weight: bold;
                 color:white;
+                margin-right:100px;
             }
             .home_phones{
                 display: flex;
                 justify-content: space-between;
+                margin-right:20px;
                 li{
                     padding:0 22px;
                     a{
@@ -72,6 +136,9 @@
                         color:white;
                         line-height:68px;
                         font-weight: 500;
+                    }
+                    .phone_iQOO,.phone_NEX,.phone_X,.phone_S,.phone_Z,.phone_Y,.phone_U,.phone_ear{
+                        @include phones
                     }
                 }
             }
@@ -87,29 +154,96 @@
             }
         }
 }
-
-.home_banner{
-        margin:0 auto;
-        width:1350px;
-        overflow: hidden;
-        .imgbnr{
-            height:650px;
-            z-index: -1;
-            position: absolute;
-            left:-650px;
-            top:0px;
+.h_search{
+    display: none;
+    width:100%;
+    position: absolute;
+    top:32px;
+    min-height: 350px;
+    background:white;
+    
+    .icon-VIVO{
+        float: left;
+        margin-left:80px;
+        font-size:26px;
+        font-weight: bold;
+        color:#000;
+        margin-right:100px;
+        padding:20px 0 27px 0;
+    }
+    .h_sch{
+        float: left;
+        .sch{
+            position: relative;
+            padding:20px 0 19px 0;
+            .h_ipt{
+                display: block;
+                width:680px;
+                height:50px;
+                padding:0 90px 0 20px;
+                border-bottom:1px solid #eee;
+            }
+            .icon-magnifier{
+                position: absolute;
+                right:50px;
+                color:#999;
+                top:24px;
+                font-size:26px;
+                font-weight: bold;
+            }   
+            .cha{
+                position: absolute;
+                color:#999;
+                right:10px;
+                top:10px;
+                font-size: 40px;
+            }
         }
+        .sch_lish{
+            width:680px;
+            li{
+                line-height:40px;
+                height:40px;
+                padding:10px 44px;
+                color:#666;
+                font-size:15px;
+            }
+            li:hover{
+                background:#F2F2F2;
+                color:#BDC6F6;
+                cursor: pointer;
+            }
+        }
+        p{
+            width:680px;
+            height:36px;
+            padding:24px 0 0 20px;
+            color:#999;
+        }
+    }
+}
+.home_banner{
+    margin:0 auto;
+    widows: 1366px;
+    height:620px;
+    overflow: hidden;
+    background:url(../images/home/home_banner.jpg) no-repeat;
+    background-position: -600px 0;
 }
 
+
 .home_main{
-    margin-top:620px;
+    z-index: -1;
+    margin-top:10px;
     position: relative;
+    overflow: hidden;
+
     .home_m{
         height:400px;
         overflow: hidden;
-        img{
-            width:1200px;
-        }
+        // img{
+        //     width:1200px;
+        // }
         .home_main_1{
             position: relative;
             float: left;
@@ -117,11 +251,14 @@
             height:580px;
             margin-right:6px;
             overflow: hidden;
-            .img01{
-                position: absolute;
-                left:-200px;
-                top:-100px;                             
-            }
+            background:url(../images/home/home_main01.png) no-repeat;
+            background-position:center -50px;
+            background-size:1080px auto;
+            // .img01{
+            //     position: absolute;
+            //     left:-200px;
+            //     top:-100px;                             
+            // }
         }
         .home_main_2{
             position: relative;
@@ -129,11 +266,14 @@
             height:580px;
             float: left;
             overflow: hidden;
-            .img02{
-                position: absolute;
-                left:-200px;
-                top:-100px;
-            }
+            background:url(../images/home/home_main01.png) no-repeat;
+            background-position:center -50px;
+            background-size:1080px auto;
+            // .img02{
+            //     position: absolute;
+            //     left:-200px;
+            //     top:-100px;
+            // }
         }
     }
 
@@ -141,6 +281,7 @@
         margin-top:8px;
         height:580px;
         position: relative;
+        overflow: hidden;
         .img03{
             position: absolute;
             left:-500px;
@@ -151,6 +292,7 @@
         margin-top:8px;
         height:580px;
         position: relative;
+        overflow: hidden;
         .img04{
             position: absolute;
             left:-500px;
@@ -164,41 +306,54 @@
         display: flex;
         flex-wrap: nowrap;
         flex-grow: 0;
-        img{           
-            height:410px;
-        }
+        // img{           
+        //     height:380px;
+        // }
         div{
             position: relative;
-            width:25%;
+            width:340px;
+            height:400px;
             overflow: hidden;
         }
         .main_51{
-            .pic51{
-                position: absolute;
-                left:-100px;
-                top:0;
-            }
+            background:url(../images/home/main_51.jpg);
+            background-position:center;
+            background-size: cover;
+            // .pic51{
+            //     position: absolute;
+            //     left:-100px;
+            //     top:0;
+            // }
         }
         .main_52{
-            .pic52{
-                position: absolute;
-                left:-100px;
-                top:0;
-            }
+            background:url(../images/home/main_52.png);
+            background-position:center;
+            background-size: cover;
+            // .pic52{
+            //     position: absolute;
+            //     left:-100px;
+            //     top:0;
+            // }
         }
         .main_53{
-            .pic53{
-                position: absolute;
-                left:-100px;
-                top:0;
-            }
+            background:url(../images/home/main_53.png);
+            background-position:center;
+            background-size: cover;
+            // .pic53{
+            //     position: absolute;
+            //     left:-100px;
+            //     top:0;
+            // }
         }
         .main_54{
-            .pic54{
-                position: absolute;
-                left:-100px;
-                top:0;
-            }
+            background:url(../images/home/main_54.jpg);
+            background-position:center;
+            background-size: cover;
+            // .pic54{
+            //     position: absolute;
+            //     left:-100px;
+            //     top:0;
+            // }
         }
     }
 }
@@ -238,7 +393,10 @@
                 display: block;
                 font-size:20px;
                 color:#333;
-                margin-bottom:28px;
+                margin-bottom:20px;
+            }
+            .icon-duanxin1{
+                margin-right:10px;
             }
             span{
                 font-size:24px;
@@ -267,4 +425,21 @@
         margin-top:74px;
     }
 }
-
+.backTop{
+    display: none;
+    background:#ccc;
+    position: fixed;
+    bottom:50px;
+    right:50px;
+    border-radius:10px;
+    div{
+        width:74px;
+        height:74px;
+        text-align: center;
+        .icon-xiangshang{
+            color:#999;
+            line-height: 74px;
+            font-size: 60px;
+        }
+    }
+}

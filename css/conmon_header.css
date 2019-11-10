@@ -1,0 +1,184 @@
+.home_header {
+  position: relative;
+  overflow: hidden; }
+  .home_header .home_top {
+    width: 100%;
+    background: #333;
+    display: flex;
+    justify-content: space-between; }
+    .home_header .home_top ul {
+      display: flex;
+      justify-content: flex-start; }
+    .home_header .home_top ul li {
+      height: 32px; }
+      .home_header .home_top ul li a {
+        line-height: 32px;
+        text-align: center;
+        color: #ccc; }
+      .home_header .home_top ul li a:hover {
+        color: #999; }
+    .home_header .home_top .home_top_r {
+      margin-right: 48px; }
+      .home_header .home_top .home_top_r .home_goods {
+        margin-right: 42px; }
+      .home_header .home_top .home_top_r .home_login {
+        margin-right: 18px; }
+      .home_header .home_top .home_top_r .home_rest {
+        margin-left: 18px; }
+      .home_header .home_top .home_top_r span {
+        margin-top: 7px;
+        color: #999; }
+    .home_header .home_top .home_top_l {
+      margin-left: 48px; }
+      .home_header .home_top .home_top_l li {
+        margin-right: 42px; }
+
+.home_guide {
+  padding: 0 80px;
+  position: absolute;
+  left: 0px;
+  top: 32px;
+  z-index: 1; }
+  .home_guide .home_nav {
+    height: 68px;
+    line-height: 68px;
+    display: flex;
+    justify-content: space-between; }
+    .home_guide .home_nav .home_logo .icon-VIVO {
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      margin-right: 80px; }
+    .home_guide .home_nav .home_phones {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 20px; }
+      .home_guide .home_nav .home_phones li {
+        padding: 0 22px; }
+        .home_guide .home_nav .home_phones li a {
+          font-size: 16px;
+          color: white;
+          line-height: 68px;
+          font-weight: 500; }
+        .home_guide .home_nav .home_phones li .phone_to {
+          display: none;
+          width: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0;
+          height: 384px;
+          background: rgba(255, 255, 255, 0.95);
+          z-index: -1; }
+          .home_guide .home_nav .home_phones li .phone_to ._list {
+            margin-left: 150px;
+            margin-top: 96px;
+            float: left;
+            display: flex;
+            justify-content: space-around;
+            text-align: center; }
+            .home_guide .home_nav .home_phones li .phone_to ._list li {
+              position: relative;
+              width: 100px;
+              height: 194px;
+              padding: 0 40px;
+              text-align: center; }
+              .home_guide .home_nav .home_phones li .phone_to ._list li img {
+                position: absolute;
+                left: 80px;
+                top: 10px; }
+              .home_guide .home_nav .home_phones li .phone_to ._list li .phone_img1 {
+                left: 60px; }
+              .home_guide .home_nav .home_phones li .phone_to ._list li p {
+                line-height: 18px;
+                margin-top: 200px;
+                color: #999;
+                font-size: 16px; }
+              .home_guide .home_nav .home_phones li .phone_to ._list li span {
+                padding-top: 10px;
+                line-height: 16px;
+                display: block;
+                color: #415FFF;
+                font-size: 12px; }
+          .home_guide .home_nav .home_phones li .phone_to .home_compl {
+            float: left;
+            margin: 128px 0 0 0; }
+            .home_guide .home_nav .home_phones li .phone_to .home_compl div {
+              text-align: center;
+              color: #333;
+              line-height: 30px;
+              padding: 10px 30px;
+              margin-bottom: 15px;
+              border-radius: 26px;
+              background: #F1F1F1;
+              font-size: 14px; }
+              .home_guide .home_nav .home_phones li .phone_to .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_to .home_compl div .icon-shouji {
+                line-height: 30px;
+                font-size: 30px; }
+            .home_guide .home_nav .home_phones li .phone_to .home_compl div:hover {
+              background: #415FFF;
+              color: white; }
+    .home_guide .home_nav .home_search {
+      height: 68px;
+      width: 68px;
+      text-align: center; }
+      .home_guide .home_nav .home_search .icon-magnifier {
+        line-height: 68px;
+        font-size: 22px;
+        color: #ccc; }
+
+.h_search {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 32px;
+  min-height: 350px;
+  background: white; }
+  .h_search .icon-VIVO {
+    float: left;
+    margin-left: 80px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 100px;
+    padding: 20px 0 27px 0; }
+  .h_search .h_sch {
+    float: left; }
+    .h_search .h_sch .sch {
+      position: relative;
+      padding: 20px 0 19px 0; }
+      .h_search .h_sch .sch .h_ipt {
+        display: block;
+        width: 680px;
+        height: 50px;
+        padding: 0 90px 0 20px;
+        border-bottom: 1px solid #eee; }
+      .h_search .h_sch .sch .icon-magnifier {
+        position: absolute;
+        right: 50px;
+        color: #999;
+        top: 24px;
+        font-size: 26px;
+        font-weight: bold; }
+      .h_search .h_sch .sch .cha {
+        position: absolute;
+        color: #999;
+        right: 10px;
+        top: 10px;
+        font-size: 40px; }
+    .h_search .h_sch .sch_lish {
+      width: 680px; }
+      .h_search .h_sch .sch_lish li {
+        line-height: 40px;
+        height: 40px;
+        padding: 10px 44px;
+        color: #666;
+        font-size: 15px; }
+      .h_search .h_sch .sch_lish li:hover {
+        background: #F2F2F2;
+        color: #BDC6F6;
+        cursor: pointer; }
+    .h_search .h_sch p {
+      width: 680px;
+      height: 36px;
+      padding: 24px 0 0 20px;
+      color: #999; }

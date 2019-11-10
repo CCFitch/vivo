@@ -1,192 +1,29 @@
-.home_header {
-  position: relative;
-  overflow: hidden; }
-  .home_header .home_top {
-    width: 100%;
-    background: #333;
-    display: flex;
-    justify-content: space-between; }
-    .home_header .home_top ul {
-      display: flex;
-      justify-content: flex-start; }
-    .home_header .home_top ul li {
-      height: 32px; }
-      .home_header .home_top ul li a {
-        line-height: 32px;
-        text-align: center;
-        color: #ccc; }
-      .home_header .home_top ul li a:hover {
-        color: #999; }
-    .home_header .home_top .home_top_r {
-      margin-right: 48px; }
-      .home_header .home_top .home_top_r .home_goods {
-        margin-right: 42px; }
-      .home_header .home_top .home_top_r .home_login {
-        margin-right: 18px; }
-      .home_header .home_top .home_top_r .home_rest {
-        margin-left: 18px; }
-      .home_header .home_top .home_top_r span {
-        margin-top: 7px;
-        color: #999; }
-    .home_header .home_top .home_top_l {
-      margin-left: 48px; }
-      .home_header .home_top .home_top_l li {
-        margin-right: 42px; }
-
-.home_guide {
-  padding: 0 80px;
-  position: absolute;
-  left: 0px;
-  top: 32px; }
-  .home_guide .home_nav {
-    height: 68px;
-    line-height: 68px;
-    display: flex;
-    justify-content: space-between; }
-    .home_guide .home_nav .home_logo .icon-VIVO {
-      font-size: 26px;
-      font-weight: bold;
-      color: white;
-      margin-right: 100px; }
-    .home_guide .home_nav .home_phones {
-      display: flex;
-      justify-content: space-between;
-      margin-right: 20px; }
-      .home_guide .home_nav .home_phones li {
-        padding: 0 22px; }
-        .home_guide .home_nav .home_phones li a {
-          font-size: 16px;
-          color: white;
-          line-height: 68px;
-          font-weight: 500; }
-        .home_guide .home_nav .home_phones li .phone_iQOO, .home_guide .home_nav .home_phones li .phone_NEX, .home_guide .home_nav .home_phones li .phone_X, .home_guide .home_nav .home_phones li .phone_S, .home_guide .home_nav .home_phones li .phone_Z, .home_guide .home_nav .home_phones li .phone_Y, .home_guide .home_nav .home_phones li .phone_U, .home_guide .home_nav .home_phones li .phone_ear {
-          display: none;
-          width: 100%;
-          position: absolute;
-          top: 68px;
-          left: 0;
-          height: 315px;
-          background: white; }
-          .home_guide .home_nav .home_phones li .phone_iQOO ._list, .home_guide .home_nav .home_phones li .phone_NEX ._list, .home_guide .home_nav .home_phones li .phone_X ._list, .home_guide .home_nav .home_phones li .phone_S ._list, .home_guide .home_nav .home_phones li .phone_Z ._list, .home_guide .home_nav .home_phones li .phone_Y ._list, .home_guide .home_nav .home_phones li .phone_U ._list, .home_guide .home_nav .home_phones li .phone_ear ._list {
-            margin-left: 150px;
-            margin-top: 28px;
-            float: left;
-            display: flex;
-            justify-content: space-between; }
-            .home_guide .home_nav .home_phones li .phone_iQOO ._list li, .home_guide .home_nav .home_phones li .phone_NEX ._list li, .home_guide .home_nav .home_phones li .phone_X ._list li, .home_guide .home_nav .home_phones li .phone_S ._list li, .home_guide .home_nav .home_phones li .phone_Z ._list li, .home_guide .home_nav .home_phones li .phone_Y ._list li, .home_guide .home_nav .home_phones li .phone_U ._list li, .home_guide .home_nav .home_phones li .phone_ear ._list li {
-              position: relative;
-              width: 180px;
-              height: 194px;
-              text-align: center; }
-              .home_guide .home_nav .home_phones li .phone_iQOO ._list li img, .home_guide .home_nav .home_phones li .phone_NEX ._list li img, .home_guide .home_nav .home_phones li .phone_X ._list li img, .home_guide .home_nav .home_phones li .phone_S ._list li img, .home_guide .home_nav .home_phones li .phone_Z ._list li img, .home_guide .home_nav .home_phones li .phone_Y ._list li img, .home_guide .home_nav .home_phones li .phone_U ._list li img, .home_guide .home_nav .home_phones li .phone_ear ._list li img {
-                position: absolute;
-                left: 80px;
-                top: 10px; }
-              .home_guide .home_nav .home_phones li .phone_iQOO ._list li p, .home_guide .home_nav .home_phones li .phone_NEX ._list li p, .home_guide .home_nav .home_phones li .phone_X ._list li p, .home_guide .home_nav .home_phones li .phone_S ._list li p, .home_guide .home_nav .home_phones li .phone_Z ._list li p, .home_guide .home_nav .home_phones li .phone_Y ._list li p, .home_guide .home_nav .home_phones li .phone_U ._list li p, .home_guide .home_nav .home_phones li .phone_ear ._list li p {
-                line-height: 18px;
-                margin-top: 200px;
-                color: #999;
-                font-size: 16px; }
-              .home_guide .home_nav .home_phones li .phone_iQOO ._list li span, .home_guide .home_nav .home_phones li .phone_NEX ._list li span, .home_guide .home_nav .home_phones li .phone_X ._list li span, .home_guide .home_nav .home_phones li .phone_S ._list li span, .home_guide .home_nav .home_phones li .phone_Z ._list li span, .home_guide .home_nav .home_phones li .phone_Y ._list li span, .home_guide .home_nav .home_phones li .phone_U ._list li span, .home_guide .home_nav .home_phones li .phone_ear ._list li span {
-                padding-top: 10px;
-                line-height: 16px;
-                display: block;
-                color: #415FFF;
-                font-size: 12px; }
-          .home_guide .home_nav .home_phones li .phone_iQOO .home_compl, .home_guide .home_nav .home_phones li .phone_NEX .home_compl, .home_guide .home_nav .home_phones li .phone_X .home_compl, .home_guide .home_nav .home_phones li .phone_S .home_compl, .home_guide .home_nav .home_phones li .phone_Z .home_compl, .home_guide .home_nav .home_phones li .phone_Y .home_compl, .home_guide .home_nav .home_phones li .phone_U .home_compl, .home_guide .home_nav .home_phones li .phone_ear .home_compl {
-            float: left;
-            margin: 60px 0 0 0; }
-            .home_guide .home_nav .home_phones li .phone_iQOO .home_compl div, .home_guide .home_nav .home_phones li .phone_NEX .home_compl div, .home_guide .home_nav .home_phones li .phone_X .home_compl div, .home_guide .home_nav .home_phones li .phone_S .home_compl div, .home_guide .home_nav .home_phones li .phone_Z .home_compl div, .home_guide .home_nav .home_phones li .phone_Y .home_compl div, .home_guide .home_nav .home_phones li .phone_U .home_compl div, .home_guide .home_nav .home_phones li .phone_ear .home_compl div {
-              text-align: center;
-              color: #333;
-              line-height: 30px;
-              padding: 10px 30px;
-              margin-bottom: 15px;
-              border-radius: 26px;
-              background: #F1F1F1;
-              font-size: 14px; }
-              .home_guide .home_nav .home_phones li .phone_iQOO .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_iQOO .home_compl div .icon-shouji, .home_guide .home_nav .home_phones li .phone_NEX .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_NEX .home_compl div .icon-shouji, .home_guide .home_nav .home_phones li .phone_X .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_X .home_compl div .icon-shouji, .home_guide .home_nav .home_phones li .phone_S .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_S .home_compl div .icon-shouji, .home_guide .home_nav .home_phones li .phone_Z .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_Z .home_compl div .icon-shouji, .home_guide .home_nav .home_phones li .phone_Y .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_Y .home_compl div .icon-shouji, .home_guide .home_nav .home_phones li .phone_U .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_U .home_compl div .icon-shouji, .home_guide .home_nav .home_phones li .phone_ear .home_compl div .icon-cedaohang-mokuai, .home_guide .home_nav .home_phones li .phone_ear .home_compl div .icon-shouji {
-                line-height: 30px;
-                font-size: 30px; }
-            .home_guide .home_nav .home_phones li .phone_iQOO .home_compl div:hover, .home_guide .home_nav .home_phones li .phone_NEX .home_compl div:hover, .home_guide .home_nav .home_phones li .phone_X .home_compl div:hover, .home_guide .home_nav .home_phones li .phone_S .home_compl div:hover, .home_guide .home_nav .home_phones li .phone_Z .home_compl div:hover, .home_guide .home_nav .home_phones li .phone_Y .home_compl div:hover, .home_guide .home_nav .home_phones li .phone_U .home_compl div:hover, .home_guide .home_nav .home_phones li .phone_ear .home_compl div:hover {
-              background: #415FFF;
-              color: white; }
-    .home_guide .home_nav .home_search {
-      height: 68px;
-      width: 68px;
-      text-align: center; }
-      .home_guide .home_nav .home_search .icon-magnifier {
-        line-height: 68px;
-        font-size: 22px;
-        color: #ccc; }
-
-.h_search {
-  display: none;
-  width: 100%;
-  position: absolute;
-  top: 32px;
-  min-height: 350px;
-  background: white; }
-  .h_search .icon-VIVO {
-    float: left;
-    margin-left: 80px;
-    font-size: 26px;
-    font-weight: bold;
-    color: #000;
-    margin-right: 100px;
-    padding: 20px 0 27px 0; }
-  .h_search .h_sch {
-    float: left; }
-    .h_search .h_sch .sch {
-      position: relative;
-      padding: 20px 0 19px 0; }
-      .h_search .h_sch .sch .h_ipt {
-        display: block;
-        width: 680px;
-        height: 50px;
-        padding: 0 90px 0 20px;
-        border-bottom: 1px solid #eee; }
-      .h_search .h_sch .sch .icon-magnifier {
-        position: absolute;
-        right: 50px;
-        color: #999;
-        top: 24px;
-        font-size: 26px;
-        font-weight: bold; }
-      .h_search .h_sch .sch .cha {
-        position: absolute;
-        color: #999;
-        right: 10px;
-        top: 10px;
-        font-size: 40px; }
-    .h_search .h_sch .sch_lish {
-      width: 680px; }
-      .h_search .h_sch .sch_lish li {
-        line-height: 40px;
-        height: 40px;
-        padding: 10px 44px;
-        color: #666;
-        font-size: 15px; }
-      .h_search .h_sch .sch_lish li:hover {
-        background: #F2F2F2;
-        color: #BDC6F6;
-        cursor: pointer; }
-    .h_search .h_sch p {
-      width: 680px;
-      height: 36px;
-      padding: 24px 0 0 20px;
-      color: #999; }
-
 .home_banner {
   margin: 0 auto;
   widows: 1366px;
   height: 620px;
   overflow: hidden;
   background: url(../images/home/home_banner.jpg) no-repeat;
-  background-position: -600px 0; }
+  background-position: -600px 0;
+  position: relative; }
+  .home_banner .banner_con {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    color: white; }
+    .home_banner .banner_con h2 {
+      font-size: 30px; }
+    .home_banner .banner_con p {
+      font-size: 18px;
+      line-height: 40px; }
+    .home_banner .banner_con a {
+      color: white; }
+      .home_banner .banner_con a span {
+        display: inline-block;
+        margin-top: 40px;
+        padding-right: 20px; }
 
 .home_main {
-  z-index: -1;
   margin-top: 10px;
   position: relative;
   overflow: hidden; }
@@ -200,9 +37,20 @@
       height: 580px;
       margin-right: 6px;
       overflow: hidden;
-      background: url(../images/home/home_main01.png) no-repeat;
+      background: url(../images/home/home_main02.png) no-repeat;
       background-position: center -50px;
       background-size: 1080px auto; }
+      .home_main .home_m .home_main_1 .main_1_con {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        color: #000;
+        text-align: center; }
+        .home_main .home_m .home_main_1 .main_1_con h2 {
+          font-size: 24px; }
+        .home_main .home_m .home_main_1 .main_1_con p {
+          font-size: 18px;
+          padding: 6px; }
     .home_main .home_m .home_main_2 {
       position: relative;
       width: 670px;
@@ -212,6 +60,17 @@
       background: url(../images/home/home_main01.png) no-repeat;
       background-position: center -50px;
       background-size: 1080px auto; }
+      .home_main .home_m .home_main_2 .main_2_con {
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        color: #000;
+        text-align: center; }
+        .home_main .home_m .home_main_2 .main_2_con h2 {
+          font-size: 24px; }
+        .home_main .home_m .home_main_2 .main_2_con p {
+          font-size: 18px;
+          padding: 6px; }
   .home_main .home_main_3 {
     margin-top: 8px;
     height: 580px;
@@ -221,6 +80,28 @@
       position: absolute;
       left: -500px;
       height: 580px; }
+    .home_main .home_main_3 .main_3_con {
+      position: absolute;
+      left: 120px;
+      top: 120px;
+      color: #000; }
+      .home_main .home_main_3 .main_3_con div {
+        font-size: 40px;
+        padding: 20px 0;
+        font-weight: bold; }
+      .home_main .home_main_3 .main_3_con h2 {
+        font-size: 30px;
+        font-weight: bold; }
+      .home_main .home_main_3 .main_3_con p {
+        color: #999;
+        font-size: 18px;
+        line-height: 40px; }
+      .home_main .home_main_3 .main_3_con a {
+        color: #000; }
+        .home_main .home_main_3 .main_3_con a span {
+          display: inline-block;
+          margin-top: 40px;
+          padding-right: 20px; }
   .home_main .home_main_4 {
     margin-top: 8px;
     height: 580px;
@@ -230,6 +111,22 @@
       position: absolute;
       left: -500px;
       height: 580px; }
+    .home_main .home_main_4 .main_4_con {
+      position: absolute;
+      left: 100px;
+      top: 150px;
+      color: white; }
+      .home_main .home_main_4 .main_4_con h2 {
+        font-size: 30px; }
+      .home_main .home_main_4 .main_4_con p {
+        font-size: 18px;
+        line-height: 40px; }
+      .home_main .home_main_4 .main_4_con a {
+        color: white; }
+        .home_main .home_main_4 .main_4_con a span {
+          display: inline-block;
+          margin-top: 40px;
+          padding-right: 20px; }
   .home_main .home_main_5 {
     margin-top: 8px;
     height: 410px;
@@ -246,71 +143,62 @@
       background: url(../images/home/main_51.jpg);
       background-position: center;
       background-size: cover; }
+      .home_main .home_main_5 .main_51 .main_5_con1 {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        color: #000;
+        text-align: center; }
+        .home_main .home_main_5 .main_51 .main_5_con1 h2 {
+          font-size: 24px; }
+        .home_main .home_main_5 .main_51 .main_5_con1 p {
+          font-size: 18px;
+          padding: 6px; }
     .home_main .home_main_5 .main_52 {
       background: url(../images/home/main_52.png);
       background-position: center;
       background-size: cover; }
+      .home_main .home_main_5 .main_52 .main_5_con2 {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        color: white;
+        text-align: center; }
+        .home_main .home_main_5 .main_52 .main_5_con2 h2 {
+          font-size: 24px; }
+        .home_main .home_main_5 .main_52 .main_5_con2 p {
+          font-size: 18px;
+          padding: 6px; }
     .home_main .home_main_5 .main_53 {
       background: url(../images/home/main_53.png);
       background-position: center;
       background-size: cover; }
+      .home_main .home_main_5 .main_53 .main_5_con3 {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        color: white;
+        text-align: center; }
+        .home_main .home_main_5 .main_53 .main_5_con3 h2 {
+          font-size: 24px; }
+        .home_main .home_main_5 .main_53 .main_5_con3 p {
+          font-size: 18px;
+          padding: 6px; }
     .home_main .home_main_5 .main_54 {
       background: url(../images/home/main_54.jpg);
       background-position: center;
       background-size: cover; }
-
-.home_footer {
-  width: 100%;
-  padding-top: 80px;
-  background: #F7F7F7; }
-  .home_footer .contain_inner {
-    margin: 0 auto;
-    width: 1200px;
-    display: flex;
-    justify-content: space-between; }
-    .home_footer .contain_inner .home_footer_l {
-      background: #f7f7f7; }
-      .home_footer .contain_inner .home_footer_l .footer_l {
-        float: left;
-        width: 180px;
-        padding-left: 10px; }
-        .home_footer .contain_inner .home_footer_l .footer_l h3 {
-          font-size: 16px;
-          color: #333;
-          padding-bottom: 40px; }
-        .home_footer .contain_inner .home_footer_l .footer_l li {
-          margin-bottom: 18px; }
-          .home_footer .contain_inner .home_footer_l .footer_l li a {
-            font-size: 14px;
-            color: #999; }
-    .home_footer .contain_inner .home_footer_r {
-      width: 180px; }
-      .home_footer .contain_inner .home_footer_r > a {
-        display: block;
-        font-size: 20px;
-        color: #333;
-        margin-bottom: 20px; }
-      .home_footer .contain_inner .home_footer_r .icon-duanxin1 {
-        margin-right: 10px; }
-      .home_footer .contain_inner .home_footer_r span {
-        font-size: 24px;
-        color: #415FFF; }
-      .home_footer .contain_inner .home_footer_r p, .home_footer .contain_inner .home_footer_r div {
-        font-size: 14px;
-        color: #333;
-        padding: 0 0 10px; }
-      .home_footer .contain_inner .home_footer_r div {
-        margin-top: 40px; }
-      .home_footer .contain_inner .home_footer_r a .iconfont {
-        font-size: 20px;
-        margin-left: 16px;
-        font-weight: bold; }
-  .home_footer .foot {
-    border-top: 1px solid #999;
-    background: #F7F7F7;
-    text-align: center;
-    padding: 30px;
-    margin-top: 74px; }
+      .home_main .home_main_5 .main_54 .main_5_con4 {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        color: white;
+        text-align: center; }
+        .home_main .home_main_5 .main_54 .main_5_con4 h2 {
+          font-size: 24px; }
+        .home_main .home_main_5 .main_54 .main_5_con4 p {
+          font-size: 18px;
+          padding: 6px; }
 
 .backTop {
   display: none;

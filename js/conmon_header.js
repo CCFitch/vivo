@@ -1,4 +1,5 @@
-$('.home_phones').hover(
+var col =  $('.home_guide').css('background')
+$('.phone').hover(
     function(){
         $('.home_guide').css('background','white')
         $('.home_guide .icon-VIVO').css('color','#000')
@@ -7,7 +8,8 @@ $('.home_phones').hover(
         // $(this).children('.phone_to').slideDown(500,'swing')
     },
     function(){
-        $('.home_guide').css('background','none')
+        
+        $('.home_guide').css('background',col)
         $('.home_guide .icon-VIVO').css('color','white')
         $('.home_guide .home_phones li>a').css('color','white')
         // $(this).children('.phone_to').slideUp(500,'swing')
@@ -58,3 +60,15 @@ $('._list li').hover(
         $(this).children('.phone_img1').animate({left:'60px'},500)
     }
 )
+
+
+$('.home_search').click(function(){
+    $('.h_search').show(500,'easeInBack')
+    $('.h_search').css('z-index','1')
+    $('.home_guide').hide(500,'easeInBack')
+})
+$('.cha').click(function(){
+    $('.h_search').hide(500,'easeInBack')
+    $('.home_guide').show(500,'easeInBack')
+
+})

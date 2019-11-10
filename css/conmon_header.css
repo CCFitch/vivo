@@ -1,6 +1,7 @@
 .home_header {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 3; }
   .home_header .home_top {
     width: 100%;
     background: #333;
@@ -34,16 +35,18 @@
         margin-right: 42px; }
 
 .home_guide {
-  padding: 0 80px;
+  width: 100%;
+  padding-left: 80px;
   position: absolute;
   left: 0px;
   top: 32px;
-  z-index: 1; }
+  z-index: 3;
+  box-sizing: border-box; }
   .home_guide .home_nav {
     height: 68px;
     line-height: 68px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-start; }
     .home_guide .home_nav .home_logo .icon-VIVO {
       font-size: 26px;
       font-weight: bold;
@@ -132,7 +135,8 @@
   position: absolute;
   top: 32px;
   min-height: 350px;
-  background: white; }
+  background: white;
+  z-index: 2; }
   .h_search .icon-VIVO {
     float: left;
     margin-left: 80px;

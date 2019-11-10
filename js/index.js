@@ -46,16 +46,6 @@ $(document).scroll(function(){
 $('.backTop div').click(function(){
     $(document).scrollTop(0)
 })
-$('.home_search').click(function(){
-    $('.h_search').show(500,'easeInBack')
-    $('.h_search').css('z-index','1')
-    $('.home_guide').hide(500,'easeInBack')
-})
-$('.cha').click(function(){
-    $('.h_search').hide(500,'easeInBack')
-    $('.home_guide').show(500,'easeInBack')
-
-})
 
 //头部
 // $('.home_phones').hover(

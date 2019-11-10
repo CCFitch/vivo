@@ -25,13 +25,13 @@ gulp.task('concat1',function(){
     .pipe(connect.reload())
 })
 //合并js 压缩js
-gulp.task('concat2',function(){
-    return gulp.src(['./js/*.js','!./js/jquery*.js'])
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js'))
-    .pipe(connect.reload())
-})
+// gulp.task('concat2',function(){
+//     return gulp.src(['./js/*.js','!./js/jquery*.js'])
+//     .pipe(concat('main.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('./dist/js'))
+//     .pipe(connect.reload())
+// })
 //压缩html
 gulp.task('minifyHtml',function(){
     return gulp.src('./index.html')
@@ -65,7 +65,7 @@ gulp.task('rename',function(){
 //创建监听
 gulp.task('watch',function(){
     gulp.watch('./css/*.css',gulp.series('concat1'))
-    gulp.watch('./js/*.js',gulp.series('concat2'))
+    // gulp.watch('./js/*.js',gulp.series('concat2'))
     gulp.watch('./*.html',gulp.series('minifyHtml'))
     gulp.watch('./images/*.*',gulp.series('imagemin'))
     gulp.watch('./sass/*.scss',gulp.series('sass'));
@@ -87,7 +87,7 @@ gulp.task('run',gulp.series('reload','watch'))
 gulp.task('build',gulp.parallel(
     gulp.series('sass'),
     gulp.series('concat1'),
-    gulp.series('concat2'),
+    // gulp.series('concat2'),
     gulp.series('minifyHtml'),
     gulp.series('imagemin')
 ))

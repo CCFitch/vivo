@@ -231,7 +231,6 @@
 //     }
 // }
 .home_banner{
-    margin:0 auto;
     widows: 1366px;
     height:620px;
     overflow: hidden;
@@ -281,14 +280,12 @@
             height:580px;
             margin-right:6px;
             overflow: hidden;
-            background:url(../images/home/home_main02.png) no-repeat;
-            background-position:center -50px;
-            background-size:1080px auto;
-            // .img01{
-            //     position: absolute;
-            //     left:-200px;
-            //     top:-100px;                             
-            // }
+            .img01{
+                position: absolute;
+                left:-200px;
+                top:-100px; 
+                height:500px;                         
+            }
             .main_1_con{
                 position: absolute;
                 top:30px;
@@ -310,14 +307,12 @@
             height:580px;
             float: left;
             overflow: hidden;
-            background:url(../images/home/home_main01.png) no-repeat;
-            background-position:center -50px;
-            background-size:1080px auto;
-            // .img02{
-            //     position: absolute;
-            //     left:-200px;
-            //     top:-100px;
-            // }
+            .img02{
+                height:500px;
+                position: absolute;
+                left:-200px;
+                top:-100px;
+            }
             .main_2_con{
                 position: absolute;
                 top:30px;

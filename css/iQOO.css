@@ -1,0 +1,172 @@
+.content {
+  width: 1200px;
+  margin: 0 auto; }
+
+#header {
+  height: 100px;
+  margin: 0 auto;
+  background: blue; }
+
+#iQOO-main {
+  width: 100%;
+  height: 820px;
+  background: url(../images/iQOO/iQOO-banner.jpg) no-repeat center center;
+  margin: 0 auto;
+  background-size: cover;
+  position: relative; }
+  #iQOO-main .iQOO-box {
+    position: absolute;
+    top: 40%;
+    width: 490px;
+    min-height: 180px;
+    z-index: 10;
+    text-align: center;
+    left: 10%; }
+    #iQOO-main .iQOO-box img {
+      width: 100%;
+      margin-bottom: 50px; }
+    #iQOO-main .iQOO-box .buyBtn {
+      float: left;
+      height: 20px;
+      margin: 0 20px;
+      cursor: pointer; }
+      #iQOO-main .iQOO-box .buyBtn a {
+        display: block;
+        font-size: 18px;
+        color: #fff; }
+      #iQOO-main .iQOO-box .buyBtn span {
+        background: #fff;
+        color: #fff;
+        width: 10px;
+        height: 2px;
+        display: inline-block; }
+
+.phWarp {
+  background: #e7e7e3;
+  padding-bottom: 60px; }
+  .phWarp .iQ-phone-list {
+    height: 220px;
+    background: #fff;
+    position: relative;
+    overflow: hidden; }
+    .phWarp .iQ-phone-list .icon-iconset0423 {
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      font-size: 36px;
+      margin: 0 40px;
+      box-sizing: border-box;
+      cursor: pointer; }
+      .phWarp .iQ-phone-list .icon-iconset0423:hover {
+        color: #888; }
+    .phWarp .iQ-phone-list .icon-iconset0424 {
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      font-size: 36px;
+      padding: 0px 30px;
+      box-sizing: border-box;
+      cursor: pointer; }
+      .phWarp .iQ-phone-list .icon-iconset0424:hover {
+        color: #888; }
+    .phWarp .iQ-phone-list li {
+      margin: 0 70px;
+      height: 100%;
+      width: 100%;
+      padding-left: 50px; }
+      .phWarp .iQ-phone-list li a {
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center; }
+        .phWarp .iQ-phone-list li a img {
+          display: block;
+          width: 120px;
+          height: 120px;
+          padding-top: 40px;
+          margin-bottom: 20px; }
+
+.typeP {
+  background: #e7e7e3;
+  margin: 0 auto; }
+  .typeP .iQOO-Neo85, .typeP .iQOO, .typeP .iQOONeo {
+    margin: 0 auto;
+    background: url(../images/iQOO/banner1.jpg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 60px;
+    height: 600px;
+    position: relative; }
+    .typeP .iQOO-Neo85 .slogan, .typeP .iQOO-Neo85 .neo-type, .typeP .iQOO .slogan, .typeP .iQOO .neo-type, .typeP .iQOONeo .slogan, .typeP .iQOONeo .neo-type {
+      position: absolute;
+      top: 40%;
+      width: 490px;
+      min-height: 180px;
+      z-index: 10;
+      text-align: center; }
+      .typeP .iQOO-Neo85 .slogan .model, .typeP .iQOO-Neo85 .neo-type .model, .typeP .iQOO .slogan .model, .typeP .iQOO .neo-type .model, .typeP .iQOONeo .slogan .model, .typeP .iQOONeo .neo-type .model {
+        font-size: 24px;
+        color: #fff; }
+      .typeP .iQOO-Neo85 .slogan .slogan1, .typeP .iQOO-Neo85 .neo-type .slogan1, .typeP .iQOO .slogan .slogan1, .typeP .iQOO .neo-type .slogan1, .typeP .iQOONeo .slogan .slogan1, .typeP .iQOONeo .neo-type .slogan1 {
+        font-size: 36px;
+        color: #fff; }
+      .typeP .iQOO-Neo85 .slogan .slogan2, .typeP .iQOO-Neo85 .neo-type .slogan2, .typeP .iQOO .slogan .slogan2, .typeP .iQOO .neo-type .slogan2, .typeP .iQOONeo .slogan .slogan2, .typeP .iQOONeo .neo-type .slogan2 {
+        font-size: 30px;
+        color: #fff; }
+      .typeP .iQOO-Neo85 .slogan .box85, .typeP .iQOO-Neo85 .slogan .neo, .typeP .iQOO-Neo85 .neo-type .box85, .typeP .iQOO-Neo85 .neo-type .neo, .typeP .iQOO .slogan .box85, .typeP .iQOO .slogan .neo, .typeP .iQOO .neo-type .box85, .typeP .iQOO .neo-type .neo, .typeP .iQOONeo .slogan .box85, .typeP .iQOONeo .slogan .neo, .typeP .iQOONeo .neo-type .box85, .typeP .iQOONeo .neo-type .neo {
+        margin-top: 30px;
+        padding-left: 110px; }
+        .typeP .iQOO-Neo85 .slogan .box85 .buyBtn85, .typeP .iQOO-Neo85 .slogan .neo .buyBtn85, .typeP .iQOO-Neo85 .neo-type .box85 .buyBtn85, .typeP .iQOO-Neo85 .neo-type .neo .buyBtn85, .typeP .iQOO .slogan .box85 .buyBtn85, .typeP .iQOO .slogan .neo .buyBtn85, .typeP .iQOO .neo-type .box85 .buyBtn85, .typeP .iQOO .neo-type .neo .buyBtn85, .typeP .iQOONeo .slogan .box85 .buyBtn85, .typeP .iQOONeo .slogan .neo .buyBtn85, .typeP .iQOONeo .neo-type .box85 .buyBtn85, .typeP .iQOONeo .neo-type .neo .buyBtn85 {
+          float: left;
+          padding-left: 50px; }
+          .typeP .iQOO-Neo85 .slogan .box85 .buyBtn85 a, .typeP .iQOO-Neo85 .slogan .neo .buyBtn85 a, .typeP .iQOO-Neo85 .neo-type .box85 .buyBtn85 a, .typeP .iQOO-Neo85 .neo-type .neo .buyBtn85 a, .typeP .iQOO .slogan .box85 .buyBtn85 a, .typeP .iQOO .slogan .neo .buyBtn85 a, .typeP .iQOO .neo-type .box85 .buyBtn85 a, .typeP .iQOO .neo-type .neo .buyBtn85 a, .typeP .iQOONeo .slogan .box85 .buyBtn85 a, .typeP .iQOONeo .slogan .neo .buyBtn85 a, .typeP .iQOONeo .neo-type .box85 .buyBtn85 a, .typeP .iQOONeo .neo-type .neo .buyBtn85 a {
+            color: #fff;
+            font-size: 14px;
+            display: block; }
+          .typeP .iQOO-Neo85 .slogan .box85 .buyBtn85 span, .typeP .iQOO-Neo85 .slogan .neo .buyBtn85 span, .typeP .iQOO-Neo85 .neo-type .box85 .buyBtn85 span, .typeP .iQOO-Neo85 .neo-type .neo .buyBtn85 span, .typeP .iQOO .slogan .box85 .buyBtn85 span, .typeP .iQOO .slogan .neo .buyBtn85 span, .typeP .iQOO .neo-type .box85 .buyBtn85 span, .typeP .iQOO .neo-type .neo .buyBtn85 span, .typeP .iQOONeo .slogan .box85 .buyBtn85 span, .typeP .iQOONeo .slogan .neo .buyBtn85 span, .typeP .iQOONeo .neo-type .box85 .buyBtn85 span, .typeP .iQOONeo .neo-type .neo .buyBtn85 span {
+            background: #fff;
+            color: #fff;
+            width: 10px;
+            height: 2px;
+            display: inline-block; }
+  .typeP .iQOO {
+    margin: 0 auto;
+    background: url(../images/iQOO/banner5.jpg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 60px;
+    height: 600px;
+    position: relative; }
+  .typeP .iQOONeo {
+    margin: 0 auto;
+    background: url(../images/iQOO/banner4.jpg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 60px;
+    height: 600px;
+    position: relative; }
+    .typeP .iQOONeo .neo-type {
+      position: absolute;
+      top: 40%;
+      width: 490px;
+      min-height: 180px;
+      z-index: 10;
+      text-align: center;
+      right: 5%; }
+  .typeP .iQOO-more {
+    text-align: center;
+    padding: 60px 0; }
+    .typeP .iQOO-more img {
+      display: block;
+      margin: 0 auto;
+      width: 270px;
+      height: 70px; }
+    .typeP .iQOO-more .m {
+      margin-top: 50px; }
+      .typeP .iQOO-more .m a {
+        color: blue;
+        font-size: 14px;
+        display: block; }
+      .typeP .iQOO-more .m span {
+        background: #fff;
+        color: #fff;
+        width: 10px;
+        height: 2px;
+        display: inline-block;
+        background-color: blue; }

@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
 </head>
 <body>
-    
+    <div class="login">
+			<div class="login-top">
+				登录
+			</div>
+			<div class="login-center clearfix">
+				<div class="login-center-img"><img src="../images/img/name.png"/></div>
+				<div class="login-center-input">
+					<form action="login.php" method="post">
+						
+					<input type="text" id="uname" value="" placeholder="请输入您的用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的用户名'"/>
+					<div class="login-center-input-text">用户名</div>
+					
+				</div>
+			</div>
+			<div class="login-center clearfix">
+				<div class="login-center-img"><img src="../images/img/password.png"/></div>
+				<div class="login-center-input">
+					<input type="password" id="pwd" value="" placeholder="请输入您的密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的密码'"/>
+					<div class="login-center-input-text">密码</div>
+				</div>
+			</div>
+			<p class="formInput" style="text-align: center;"><input id="autoLogin" type="checkbox"/>下次自动登录</p>
+			<input type="button" name="" id="login-button" value="登陆"  class="login-button"/>
+			<div class="register-button">
+				
+				<a href="register.html">还没有账号？去注册</a>
+				
+			</div>
+				<a href="../index.html" style="text-align: center;display: block;">返回首页</a>
+		</div>
+		<script type="text/javascript" src="../js/ajax.js"></script>
+		<!--<script src="../js/cookie.js"></script>-->
+		<script>
+				var dluname=document.querySelector('#uname')
+				var dlpws=document.querySelector('#pwd')
+				var dl=document.querySelector('#login-button')
+				//登录时需要保存登录状态
+				var autoLogin=document.getElementById("autoLogin");
+				dl.onclick=function(){
+					
+//				//判断是否选中了自动登录			
+			if(autoLogin.checked){	
+//					var date = new Date();
+//					date.setDate(date.getDate()+5);
+					//如果选中了，需要记录当前的登录状态
+					//在cookie中保存登录状态
+					//状态为一个身份令牌
+					ajax({
+						url: '../login2.php',
+						type: 'get',
+						data: 'act=login&user=' + dluname.value + '&pass=' + dlpws.value,
+						success: function(data) {
+							var json = JSON.parse(data);
+							console.log(json);
+		//					{err: "0", msg: "注册成功"}
+							if(json.err=="0"){
+							alert(json.msg);
+							console.log(json.msg)
+							location.href='../index.html?uername='+json.username;
+//							setCookie("token",json.username,date,"/");
+							localStorage.setItem("token", json.username)
+							}else{
+								alert(json.msg);
+								location.href='login.html';
+								alert("登录失败，请重新登录");
+							}		
+						},
+						failed: function(c) {
+						alert(c);
+						}
+					});
+				}
+			  else{
+//					var date = new Date();
+//					date.setDate(date.getDate()+5);
+//					//如果选中了，需要记录当前的登录状态
+//					//在cookie中保存登录状态
+//					//状态为一个身份令牌
+//					setCookie("token",false,date,"/");
+					ajax({
+						url: '../login2.php',
+						type: 'get',
+						data: 'act=login&user=' + dluname.value + '&pass=' + dlpws.value,
+						success: function(data) {
+							var json = JSON.parse(data);
+							console.log(json);
+		//					{err: "0", msg: "注册成功"}
+							if(json.err=="0"){
+							alert(json.msg);
+							console.log(json.msg)
+							location.href='../index.html?uername='+json.username;
+							}else{
+								alert(json.msg);
+								location.href='login.html';
+								alert("登录失败，请重新登录");
+							}		
+						},
+						failed: function(c) {
+						alert(c);
+						}
+					});
+				}
+			}
+			
+				
+//					console.log(dluname.value)
+//					console.log(dlpws.value)
+					
+		</script>
+			
+		
 </body>
 </html>

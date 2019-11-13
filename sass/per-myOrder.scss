@@ -11,16 +11,12 @@
     width: 1200px;
     margin: 0 auto;
 }
+.show{
+    display: block;
+}
 //主题内容
-.bdl:after{
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
+.active{
+    color: red;
 }
 #main{
     background-color: #f7f7f5;
@@ -85,9 +81,10 @@
         background-color: #fff;
         h2{
            text-align: center;
-           padding-top: 35px;
+           padding: 35px 0;
            font-size: 20px;
        }
+       //我的订单
        & ul{
            padding-left: 20px;
            margin: 36px 0;
@@ -95,22 +92,158 @@
                float: left;
                margin-right: 60px;
                padding-bottom: 12px;
-               position: relative;
-               
-               & a{
-                   color: #666;
-                   font-size: 16px;
-               }
+               color: #666;
+               font-size: 16px;
+               cursor: pointer;
            }
-        }
-       & .no-roder{
-           padding: 150px 0;
-           text-align: center;
-           font-size: 16px;
-           color: #888;
-          & .noder-img{
-              margin-bottom: 12px;
-          }
+        } 
+      
+           & .no-roder{
+            padding: 150px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+            // display: none;
+           & .noder-img{
+               margin-bottom: 12px;
+           }
+        
        }
+
+     //我的收藏
+
+        & .collect{
+            border: 1px solid #ccc;
+            margin-top: 30px;
+            min-width :900px;
+            text-align: center;
+            position: relative;
+            & thead tr th{
+                color: #888;
+                font-size: 16px;
+                height: 50px;
+                font-weight: bold;
+             
+            }
+            & tbody tr .name{
+                cursor: pointer;
+            }
+
+            //我的收藏价格
+            & tbody tr .price{
+                color: red;
+                font-weight: bold;
+            }
+            & .option{
+                position: relative;
+                   //我的收藏去购买按钮
+                & .goby{
+                    border: 1px solid blue;
+                    color:blue ;
+                    font-size: 14px;
+                    text-align: center;
+                    padding: 0 15px;
+                    cursor: pointer;
+                }
+                & .delete{
+                    color:blue ;
+                    font-size: 14px;
+                    padding: 6px 15px;
+                    cursor: pointer;
+                }
+            
+               
+               
+            }
+           
+     
+        }
+
+   // 收货地址
+
+  .addAdress{
+    min-height: 150px;
+    min-width: 800px;
+
+    & .addNew{
+        border: 1px solid #ccc;
+        width: 300px;
+        height: 150px;
+        text-align: center;
+        padding-top: 40px;
+        box-sizing: border-box;
+        cursor: pointer;
+        & p{
+            margin: 0 auto;
+            background: #ccc;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        & span{
+            font-size: 14px;
+            color: #ccc;
+        }
     }
+} 
+
+// 我的地址蒙版
+//定位
+@mixin wrap-sty{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.3);
+  
+}
+
+
+    //m没有订单状态
+      
+    }
+}
+
+
+// 我的收藏点击删除弹出是否购买框
+.collect-remove{
+    position: absolute;
+    top: 200px;
+    right: 120px;
+    width: 170px;
+    height: 100px;
+    border: 1px solid blue;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    & h3{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    & .confirm{
+        cursor: pointer;
+        padding: 5px 18px;
+        &:hover{
+            color: #fff;
+            background: #00a0e9;
+        }
+    }
+    & .off{
+        cursor: pointer;
+        padding: 5px 18px;
+        &:hover{
+            color: #fff;
+            background: #00a0e9;
+        }
+    }
+}
+.spanFont{
+    color: #ccc;
+    font-size: 14px;
 }

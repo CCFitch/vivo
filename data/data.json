@@ -1,50 +1,74 @@
 {
-    "iQOO":{
-        "name":"iQOO Pro ",
-        "color":["竞速黑","勒芒蓝","幻影蓝"],
+    "IQOO":{
+        "name":"iQOO Pro",
+        "color1":["竞速黑","勒芒蓝","幻影蓝"],
         "versions":["5G全网通版 12GB+128GB","5G全网通版 8GB+256GB","4G全网通版 12GB+128GB","5G全网通版 12GB+256GB","4G全网通版 8GB+128GB","5G全网通版 8GB+128GB"],
-        "size":{"height": "158.77mm","width":"75.73mm"," thickness":"9.32mm","weight":"217g"},
-        "price":{" 5G全网通版 12GB+128GB ": "3988"," 5G全网通版 8GB+256GB":"3998"," 5G全网通版 12GB+128GB":"3498"," 5G全网通版 12GB+256GB":"4498"," 4G全网通版 8GB+128GB":"3198","5G全网通版 8GB+128GB":"3698"},
-        "images":["IQimg01.jpg","IQimg02.jpg","IQimg03.jpg","IQimg04.jpg","IQpackinglist.jpg"]
+        "size":{"height":"158.77mm","width":"75.73mm","thickness":"9.32mm","weight":"217g"},
+        "money":3988,
+		"price":{"5G全网通版 12GB+128GB":"3988","5G全网通版 8GB+256GB":"3998","4G全网通版 12GB+128GB":"3498","5G全网通版 12GB+256GB":"4498","4G全网通版 8GB+128GB":"3198","5G全网通版 8GB+128GB":"3698"},
+        "images":["IQimg01.jpg","IQimg02.jpg","IQimg03.jpg","IQimg04.jpg","IQpackinglist.jpg"],
+        "color":["#202533","#223677","#123376"],
+        "num":1,
+        "id":"IQOO"
     },
     "NEX":{
         "name":"NEX 3",
-        "color":["深空流光","液态天河"],
+        "color1":["深空流光","液态天河"],
         "versions":["5G全网通版 12GB+256GB","4G全网通版 8GB+128GB","5G全网通版 8GB+256GB"],
-        "size":{"height": "167.44mm","width":"76.14mm"," thickness":"9.4mm","weight":"218.5g"},
-        "price":{"5G全网通版 12GB+256GB": "6198"," 4G全网通版 8GB+128GB":"4498"," 5G全网通版 8GB+256GB":"5698"},
-        "images":["NEXimg01.jpg","NEXimg02jpg","NEXimg03.jpg","NEXimg04.jpg","NEXpackinglist.jpg"]
+        "size":{"height":"167.44mm","width":"76.14mm","thickness":"9.4mm","weight":"218.5g"},
+        "money":6198,
+		"price":{"5G全网通版 12GB+256GB":"6198","4G全网通版 8GB+128GB":"4498","5G全网通版 8GB+256GB":"5698"},
+        "images":["NEXimg01.jpg","NEXimg02.jpg","NEXimg03.jpg","NEXimg04.jpg","NEXpackinglist.jpg"],
+        "color":["#28323b","#d1eefc"],
+        "num":1,
+        "id":"NEX"
     },
     "X_series":{
         "name":"X27",
-        "color":["雀羽蓝","粉黛金","翡翠色","幻彩夏日","印象夏日"],
+        "color1":["雀羽蓝","粉黛金","翡翠色","幻彩夏日","印象夏日"],
         "versions":["全网通版 8GB+128GB","全网通版 8GB+256GB"],
-        "size":{"height": "157.66mm","width":"74.26mm"," thickness":"8.95mm","weight":"188.3g"},
-        "price":{"全网通版 8GB+128GB": "2498"," 全网通版 8GB+256GB":"2798"},
-        "images":["X27img01.jpg","X27img02jpg","X27img03.jpg","X27img04.jpg","X27packinglist.jpg"]
+        "size":{"height":"157.66mm","width":"74.26mm","thickness":"8.95mm","weight":"188.3g"},
+        "money":2498,
+		"price":{"全网通版 8GB+128GB":"2498","全网通版 8GB+256GB":"2798"},
+        "images":["X27img01.jpg","X27img02.jpg","X27img03.jpg","X27img04.jpg","X27packinglist.jpg"],
+        "color":["#2ba3d1","#fce8ea","#105b6e","#c6e7fd","#dee9f4"],
+        "num":1,
+        "id":"X_series"
     },
     "S_series":{
-        "name":"Z5 Pro",
-        "color":["钟情蓝","珊瑚红","仲夏梦"],
+        "name":"S1 Pro",
+        "color1":["钟情蓝","珊瑚红","仲夏梦"],
         "versions":["全网通版 6GB+128GB","全网通版 8GB+128GB","全网通版 6GB+256GB"],
-        "size":{"height": "157.25mm","width":"74.71mm","thickness":"8.21mm","weight":"185g"},
-        "price":{"全网通版 6GB+128GB": "1898"," 全网通版 8GB+128GB":"1998"," 全网通版 6GB+256GB":"2298"},
-        "images":["X27img01.jpg","X27img02jpg","X27img03.jpg","X27img04.jpg","X27packinglist.jpg"]
+        "size":{"height":"157.25mm","width":"74.71mm","thickness":"8.21mm","weight":"185g"},
+        "money":1898,
+		"price":{"全网通版 6GB+128GB":"1898","全网通版 8GB+128GB":"1998","全网通版 6GB+256GB":"2298"},
+        "images":["X27img01.jpg","X27img02.jpg","X27img03.jpg","X27img04.jpg","X27packinglist.jpg"],
+        "color":["#064584","#f75252","#e9e0e9"],
+        "num":1,
+        "id":"S_series"
     },
     "Z_series":{
         "name":"Z5",
-        "color":["极光幻境","全息彩幻","竹林幻夜","极速幻影"],
+        "color1":["极光幻境","全息彩幻","竹林幻夜","极速幻影"],
         "versions":["梦幻西游礼盒版 6GB+256GB","全网通版 6GB+256GB","全网通版 8GB+128GB","全网通版 6GB+128GB","全网通版 6GB+64GB"],
-        "size":{"height": "159.53mm","width":"75.23mm","thickness":"8.13mm","weight":"187g"},
-        "price":{"全梦幻西游礼盒版 6GB+256GB": "1598"," 全网通版 6GB+256GB":"1598"," 全网通版 8GB+128GB":"2098"," 全网通版 6GB+128GB":"1598"," 全网通版 6GB+64GB":"1398"},
-        "images":["Z5img01.jpg","Z5img02jpg","Z5img03.jpg","Z5img04.jpg","Z5packinglist.jpg"]
+        "size":{"height":"159.53mm","width":"75.23mm","thickness":"8.13mm","weight":"187g"},
+        "money":1598,
+		"price":{"梦幻西游礼盒版 6GB+256GB":"3698","全网通版 6GB+256GB":"3598","全网通版 8GB+128GB":"2098","全网通版 6GB+128GB":"1598","全网通版 6GB+64GB":"1398"},
+        "images":["Z5img01.jpg","Z5img02.jpg","Z5img03.jpg","Z5img04.jpg","Z5packinglist.jpg"],
+        "color":["#3e0893","#1a3d61","#1c4e1d","#97ffb2"],
+        "num":1,
+        "id":"Z_series"
     },
     "Y_series":{
         "name":"Y3标准版",
-        "color":["墨黛蓝","绯玉红"],
+        "color1":["墨黛蓝","绯玉红"],
         "versions":["全网通版 3GB+64GB"],
-        "size":{"height": "159.43mm","width":"76.77mm","thickness":"8.92mm","weight":"191.5g"},
-        "price":{"全全网通版 3GB+64GB":"999"},
-        "images":["Y3img01.jpg","Y3img02jpg","Y3img03.jpg","Y3img04.jpg"]
+        "size":{"height":"159.43mm","width":"76.77mm","thickness":"8.92mm","weight":"191.5g"},
+        "money":999,
+		"price":{"全网通版 3GB+64GB":"999"},
+        "images":["Y3img01.jpg","Y3img02.jpg","Y3img03.jpg","Y3img04.jpg"],
+        "color":["#0d5568","#590e1f"],
+        "num":1,
+        "id":"Y_series"
     }
 }

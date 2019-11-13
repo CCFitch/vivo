@@ -1,4 +1,8 @@
+body{
+    background:#000;
+}
 .nex_top{
+    // padding-top:80px;
     height:61px;
     width:100%;
     line-height: 61px;
@@ -8,7 +12,7 @@
     justify-content: space-between;
     background:#000;
     border-bottom: 1px solid #333;
-    z-index: 1;
+    z-index: 0;
     .nex_name{
         font-size: 30px;
         color:#fff;
@@ -19,13 +23,14 @@
         color:#fff;
         padding-right:20px;
     }
-    span{
+    a span{
+        display: inline-block;
         color:#fff;
         font-size: 14px;
         padding:4px 8px;
         background:blue;
         border-radius: 11px;
-            margin-right:80px;
+        margin-right:80px;
     }
 }
 .nex_main{
@@ -265,18 +270,322 @@
         }
     }
     .nex_img6{
-        height:700px;
+        height:900px;
         overflow: hidden;
-        background:url('../images/nex/nex6_1.jpg') #fff no-repeat;
-        background-position:bottom;
-        background-size: auto 550px ;
+        background:#fff;
+        position: relative;
+        .nex6_i1{
+            height:550px;
+            position: absolute;
+            bottom:0px;
+            left:340px;
+            z-index: 1;
+        }
+        .nex6_i2{
+            position: absolute;
+            top:350px;
+            left:590px;
+        }
+        .img6_con{
+            position: absolute;
+            color:#333;
+            text-align: center;
+            top:30px;
+            left:250px;
+            width:900px;
+            h2{
+                margin-top:10px;
+                font-size:40px;
+                color:blue;
+                font-weight: bold;
+            }
+            h3{              
+                font-size:40px;
+                font-weight: bold;
+            }
+            p{
+                color:#666;
+                font-weight: bold;
+                margin:10px 0;
+                font-size:16px;
+                line-height: 24px;
+            }
+        }
+
     }
     .nex_img7{
-        height:700px;
+        height:850px;
         overflow: hidden;
-        background:url('../images/nex/nex7.png') #fff no-repeat;
-        background-position:center;
-        background-size: auto 550px ;
+        background:#000;
+        position: relative;
+        .nex7_i1{
+            opacity:0;
+            position: absolute;
+            left:400px;
+            top:300px;
+            height:550px;
+        }
+        .img7_con{
+            position: absolute;
+            color:#fff;
+            text-align: left;
+            top:100px;
+            left:200px;
+            width: 800px;
+            h2{
+                margin-top:10px;
+                font-size:40px;
+                color:blue;
+                font-weight: bold;
+            }
+            h3{              
+                font-size:40px;
+                font-weight: bold;
+            }
+
+            p{
+                padding:10px 0;
+                font-size:18px;
+                line-height: 30px;
+            }
+            i{
+                line-height: 20px;
+                color:#999;
+            }
+            span a{
+                display: inline-block;
+                padding:8px 14px;
+                color:#fff;
+                font-weight: bold;
+                font-size:16px; 
+                margin:40px 0px 0 0px;
+                border-radius: 20px;
+                border:2px solid #fff;
+            }
+        }
+    }
+    .nex_img8{
+        height:1000px;
+        overflow: hidden;
+        background:#fff;
+        position: relative;
+        .nex8_v1{
+            position: absolute;
+            left:200px;
+            top:280px;
+            height:550px;
+        }
+
+        .img8_con{
+            position: absolute;
+            color:#000;
+            text-align: left;
+            top:20px;
+            left:200px;
+            width: 800px;
+            h2{
+                margin-top:10px;
+                font-size:40px;
+                color:blue;
+                font-weight: bold;
+            }
+            h3{              
+                font-size:40px;
+                font-weight: bold;
+            }
+
+            p{
+                padding:10px 0;
+                font-size:18px;
+                line-height: 30px;
+            }
+            i{
+                line-height: 20px;
+                color:#999;
+            }
+            span a{
+                display: inline-block;
+                padding:8px 14px;
+                color:#000;
+                font-weight: bold;
+                font-size:16px; 
+                margin:40px 0px 0 0px;
+                border-radius: 20px;
+                border:2px solid #fff;
+            }
+        }
+    }
+
+    .nex_img9{
+        height:1200px;
+        width:100%;
+        overflow: hidden;
+        background:#fff;
+        position: relative;
+        .img9_con{
+            position: absolute;
+            color:#000;
+            text-align: left;
+            top:20px;
+            left:200px;
+            width: 500px;
+            h2{
+                margin-top:10px;
+                font-size:40px;
+                color:blue;
+                font-weight: bold;
+            }
+            h3{              
+                font-size:40px;
+                font-weight: bold;
+            }
+            p{
+                padding:10px 0;
+                font-size:18px;
+                line-height: 30px;
+            }
+            span a{
+                display: inline-block;
+                padding:8px 14px;
+                color:#000;
+                font-weight: bold;
+                font-size:16px; 
+                margin:40px 0px 0 0px;
+                border-radius: 20px;
+                border:2px solid #fff;
+            }
+        }
+        .img9{
+            position: absolute;
+            top:0;
+            right:200px;
+            .nex9_1{
+                width:250px;
+                position: absolute;
+                right:50px;
+                top:0; 
+            }
+            .nex9_mask{
+                width:250px;
+                position: absolute;
+                right:50px;
+                top:0;
+            }
+            ._line{
+                display: none;
+                position: absolute;
+                top:-50px;
+                right:100px;
+                .nex9_line{
+
+                }
+            }
+
+        }
+
+    }
+
+    .nex_img10{
+        height:900px;
+        overflow: hidden;
+        position: relative;
+        .nex10_i1{
+            position: absolute;
+            left:0px;
+            top:0px;
+            height:900px;
+        }
+        .mask{
+            position: absolute;
+            top:0;
+            width:100%;
+            height:900px;
+            z-index: 2;
+            background:rgba(0, 0, 0, 0.8);
+        }
+        .img10_con{
+            position: absolute;
+            color:#fff;
+            text-align: left;
+            top:650px;
+            left:200px;
+            width: 400px;
+            z-index: 1;
+            h2{
+                margin-top:10px;
+                font-size:40px;
+                color:blue;
+                font-weight: bold;
+            }
+            h3{              
+                font-size:40px;
+                font-weight: bold;
+            }
+
+            p{
+                padding:10px 0;
+                font-size:18px;
+                line-height: 30px;
+            }
+
+        }
     }
 
 }
+
+// footer1
+.s_serve{
+    width:100%;
+    height:340px;
+    background-color: #fff;
+    ul{
+        margin:0 auto;
+        padding:40px 0;
+        box-sizing: border-box;
+        width:1200px;
+        height:340px;
+        overflow: hidden;
+        li{
+            float: left;
+            width:400px;
+            height:259px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;   
+            .iconfont{
+                margin:30px auto;
+                font-size: 60px;
+                color:#999;
+            }
+            p{
+                font-size: 18px;
+                color:#999;
+            }
+            h6{
+                height:18px;
+                font-size: 14px;
+                margin:20px auto 0;
+                color:#666;
+            }
+            h5{
+                height:18px;
+                font-size: 14px;
+                margin:0 auto;
+                color:#666;
+            }
+            a{
+                height:24px;
+                margin:20px auto 0;
+                color:blue;
+            }
+            span{
+                width:10px;
+                height:1px;
+                background-color: blue;
+                margin:0 auto;
+            }
+        }
+    }
+}
+

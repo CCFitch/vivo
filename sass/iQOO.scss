@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+// 头部公用
+.content{
+    width: 1200px;
+    margin: 0 auto;  
+
+}
+#header{
+    height: 100px;
+    margin: 0 auto;
+    background: blue;
+}
+    
+    // 定位背景图里的盒子
+@mixin positionBox {
+    position: absolute;
+    top: 40%;
+    width: 490px;
+    min-height: 180px;
+    z-index:10;
+    text-align: center;
+}
+@mixin aStyle{
+    display: block;
+    font-size: 18px;
+    color: #fff;   
+}
+@mixin spanStyle {
+    background: #fff;
+    color: #fff;
+    width: 10px;
+    height: 2px;
+    display: inline-block;
+}
+#iQOO-main{
+    width: 100%;
+    height: 820px;
+    background: url(../images/iQOO/iQOO-banner.jpg) no-repeat center center;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    
+    & .iQOO-box{
+       @include positionBox;
+       
+       left: 10%;
+        & img{
+            width: 100%;
+            margin-bottom: 50px;
+          }
+    // 了解/购买/选购跳转页面      
+        & .buyBtn{
+            float: left;
+            height: 20px;
+            margin: 0 20px;
+            cursor: pointer;
+            &  a{
+                  @include aStyle;
+            }
+            & span{
+               @include spanStyle;        
+               }
+        }
+      
+
+    }
+  }
+
+//   机型
+ .phWarp{
+     background: #e7e7e3;
+     padding-bottom: 60px;
+  .iQ-phone-list{
+      height: 220px;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+      & .icon-iconset0423{
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        font-size: 36px;
+        margin: 0 40px;
+        box-sizing: border-box;
+        cursor: pointer;
+        &:hover{
+            color: #888;
+        }
+
+      }
+      & .icon-iconset0424{
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        font-size: 36px;
+        padding: 0px 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+        &:hover{
+            color: #888;
+        }
+
+      }
+      & li{
+          margin: 0 70px;
+          height: 100%;
+          width: 100%;
+          padding-left: 50px;
+          & a{
+            display: inline-block;
+            margin: 0 20px;
+            text-align: center;
+            
+            & img{
+                display: block;
+                width: 120px;
+                height: 120px;
+                padding-top: 40px;
+                margin-bottom: 20px;
+            }
+          
+          }
+      }
+  }
+}
+
+
+//   .iQOO-Neo85型号
+
+@mixin m60 {
+    margin-bottom: 60px;
+    height: 600px;
+    position: relative;
+}
+
+.typeP{
+    background:#e7e7e3;
+    margin: 0 auto;
+    .iQOO-Neo85, .iQOO,.iQOONeo {
+        margin: 0 auto;
+        background: url(../images/iQOO/banner1.jpg) no-repeat center center;
+        background-size: cover;
+        @include m60;
+        & .slogan,.neo-type{
+            @include positionBox;
+            & .model{
+                font-size: 24px;
+                color: #fff;
+            }
+            & .slogan1{
+                font-size: 36px;
+                color: #fff;
+            }
+            & .slogan2{
+                font-size: 30px;
+                color: #fff;
+            }
+            & .box85,.neo{
+                margin-top: 30px;
+                padding-left: 110px;
+                & .buyBtn85{       
+                    float:left;
+                    padding-left: 50px;;                                  
+                    & a{
+                        color: #fff;
+                        font-size: 14px;
+                        display: block;
+                    }
+                    & span{
+                        @include spanStyle;
+                    }
+                }
+            }
+          
+        }
+    }
+    .iQOO{
+        margin: 0 auto;
+        background: url(../images/iQOO/banner5.jpg) no-repeat center center;
+        background-size: cover;
+        @include m60;
+    }
+
+    .iQOONeo{
+        margin: 0 auto;
+        background: url(../images/iQOO/banner4.jpg) no-repeat center center;
+        background-size: cover;
+        @include m60;
+       & .neo-type{
+        @include positionBox;
+        right: 5%;
+       }
+    }
+    .iQOO-more{
+        text-align: center;
+        padding: 60px 0;
+        & img{
+            display:block;
+            margin: 0 auto;
+            width: 270px;
+            height: 70px;
+        }
+        & .m{
+            margin-top: 50px;
+            & a{
+                color: blue;
+                font-size: 14px;
+                display: block;
+            }
+            & span{
+                @include spanStyle;
+                background-color: blue;
+            }
+        }
+    }
+}
+
+

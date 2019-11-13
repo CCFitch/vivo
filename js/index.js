@@ -12,17 +12,33 @@ $('.main_5').hover(
         $(this).children('div').animate({left:'0px'},500)
     }
 )
-$('.main_t').hover(
+$('.img01').hover(
     function(){
-        $(this).css('background-size','1300px auto')
-        $(this).css('background-position','-300px -100px')
+        $('.img02').stop(true,true)
+        $('.img01').stop(true,true)
+        $(this).animate({height:650,left:-400,top:-200},500)
     },
     function(){
-        $(this).css('background-size','1080px auto')
-        $(this).css('background-position','center -50px')
+        $('.img02').stop(true,true)
+        $('.img01').stop(true,true)
+        $(this).animate({height:500,left:-200,top:-100},500)
     }
-
 )
+$('.img02').hover(
+function(){
+    $('.img01').stop(true,true)
+    $('.img02').stop(true,true)
+    $(this).animate({height:650,left:-400,top:-200},500)
+},
+function(){
+    $('.img01').stop(true,true)
+    $('.img02').stop(true,true)
+    $(this).animate({height:500,left:-200,top:-100},500)
+}
+)
+
+
+
 $(document).scroll(function(){
     var dTop = $(document).scrollTop() 
     if(dTop > 100){
@@ -46,6 +62,7 @@ $(document).scroll(function(){
 $('.backTop div').click(function(){
     $(document).scrollTop(0)
 })
+
 
 //头部
 // $('.home_phones').hover(

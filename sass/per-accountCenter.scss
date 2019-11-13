@@ -1,0 +1,422 @@
+@charset "UTF-8";
+.content{
+    background-color: #fff;
+    width: 860px;
+    margin: 0 auto;
+}
+#wrap{
+    background-color: #f7f7f5;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    //账号中心
+    & .per-center{
+        padding-top: 60px;
+        & .loginimg{
+            width: 160px;
+            height: 42px;
+            margin: 0 auto;
+            & img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+        & .title{
+            text-align: center;
+            font-size: 20px;
+            color: #333;
+            margin-top: 30px;
+        }
+        & .acc-set{
+            width: 730px;
+            margin: 0 auto;
+            line-height: 30px;
+            margin-top: 20px;
+            & .set-name{
+                float: right;
+                width: 30px;
+                height: 30px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+            & .noset{
+                float: right;
+                margin: 0 40px 0 10px;
+            }
+            //退出账号
+            & .loginout{
+                float: right;
+                cursor: pointer;
+                & a:hover{
+                    color: blue;
+                }
+            }
+            
+        }
+
+    }
+    & .bbl{
+        width: 740px;
+        height: 1px;
+        background-color: #ccc;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    //安全设置
+    & .safety-set{
+        margin-top:18px;
+        & .sst-title{
+            padding-left: 65px;
+        }
+     
+        & .acc-list{
+            width: 860px;
+            padding: 30px 65px 0;
+            box-sizing: border-box;
+            min-height: 110px;
+            position: relative;
+            & .list{
+                height: 60px;
+                & .acc-phtot{
+                    float: left;
+                    & img{
+                        display: inline-block;
+                        width: 30px;
+                        height: 34px;
+                        margin-top: 14px;
+
+                    }
+                   
+                }
+                & .acc-pass{
+                    float: left;
+                    margin-left: 60px;
+                   
+                    & .span1{
+                        display: inline-block;
+                        font-size: 16px;
+                        margin-top: 2;
+                        margin-bottom: 14px;
+                    }
+                    & .phone-set{
+                        overflow: hidden;
+                        margin-bottom: 14px;
+                        & .span2{    
+                            float: left;                   
+                            font-size: 16px;
+                            margin-top: 2;                          
+                          }
+                        & .phone{
+                            float: left;
+                            margin-left: 20px;
+                        }
+                       }
+                    }
+                & .acc-amend{
+                    float: right;
+                    margin-top: 14px;
+                    height: 30px;
+                    width: 70px;
+                    border: 1px solid #333;
+                    border-radius: 4px;
+                    text-align: center;
+                    line-height: 30px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #ccc;
+                    }
+                    & span{
+                        font-size: 14px;
+                    }
+                }
+                & .bb-line{
+                    position: absolute;
+                    bottom: 0;
+                    right: 65px;
+                    width: 640px;
+                    height: 1px;
+                    background-color: #ccc;
+                    margin: 0 auto;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+        //绑定微信。支付宝等
+        & .bind{
+            min-height: 100px;
+            margin-bottom: 60px;
+            & h2{
+                width: 730px;
+                margin: 0 auto;
+                margin-top:30px ;
+            }
+            & .login-bind{
+                padding: 30px 65px;
+                display: flex;
+	            justify-content: space-between;
+                align-items: center;
+                //弹性盒混合器
+                @mixin fix{
+                    display: flex;
+	                justify-content: space-between;
+                    align-items: center;
+                }
+                @mixin wbox{
+                    font-size: 14px;
+                    margin-left: 20px;               
+                }
+                @mixin coloricon{
+                    font-size: 40px;
+                    color: blue;
+                }
+               
+                @mixin spancolor{
+                    color:blue;
+                    cursor: pointer;                
+                }
+                @mixin pmt{
+                    margin-bottom: 6px;
+                }
+                // 微信
+                & .weixin{
+                  @include fix;
+                  & .icon-weixin{
+                      @include coloricon;
+                  }
+                  & .weixin-box{
+                    @include wbox;
+                    & p{
+                      @include pmt;
+                      }
+                    & span{        
+                       @include spancolor;
+                    }
+                   }
+                }
+                //支付宝
+                & .zhifubao{
+                    @include fix;
+                    & .icon-zhifubao{
+                        @include coloricon;
+                    }
+                    & .zhifubao-box{
+                        @include wbox;
+                        & p{
+                            @include pmt;
+                         }
+                        & span{        
+                            @include spancolor;
+                        }
+                    }
+                }
+                //微博
+                & .weibo{
+                    @include fix;
+                    & .icon-tubiaozhizuo-{
+                        @include coloricon;
+                    }
+                    & .weibo-box{
+                        @include wbox;
+                        & p{
+                           @include pmt;
+                        }
+                        & span{        
+                            @include spancolor;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+//底部
+#footer{
+    text-align: center;
+    background: #f7f7f5;
+    height: 150px; 
+    & .service{
+        padding: 30px 0 10px 0;
+        & a:hover{
+            color: blue;
+        }
+      
+    }
+
+}
+
+//修改密码
+
+
+
+//h2
+@mixin h-title{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+//关闭
+@mixin clone{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+//定位
+@mixin wrap-sty{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.3);
+  
+}
+
+//完成 验证混合
+@mixin verifydone{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+//主体
+@mixin con{
+    position: absolute;
+    top: 50px;
+    left: 400px;    
+    width: 500px;
+    background-color: #fff;
+    min-height: 400px;
+    padding: 50px 65px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+//修改密码
+.per-accent-wrap{ 
+    @include wrap-sty;  
+    display: none;
+    & .change-pass{
+        @include con;
+        & .clone{
+            @include clone;
+        }
+        & h2{
+          @include h-title;
+        }
+        & .change-pass-old , .change-pass-new ,.change-pass-verify{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            & h3{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            & .txt{
+                width: 350px;
+                height: 40px;
+                border: 1px solid #ccc;
+                padding-left: 10px;
+            }         
+        }
+        // 输入密码提示
+        & .hint{
+            color: #ccc;
+        }
+        //完成密码确认
+        & .change-pass-done{
+            @include verifydone;
+        }
+    }
+}
+
+//身份验证
+.per-id-wrap{
+    @include wrap-sty;
+     display: none;
+    & .id-verify{
+        @include con;
+        & .clone{
+            @include clone;
+        }
+        & h2{
+            @include h-title;
+        }
+        & h3{
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+            font-size: 14px;
+        }
+        & .code-box{
+            margin-top: 30px; 
+            & .phone-code{
+                color: #333;
+                font-size: 14px;
+            }
+            // 短信验证
+            & .info{
+                margin-top: 20px;
+                width: 360px;
+                height: 40px;
+                border: 1px solid #ccc;
+                position: relative;
+                & .txt{
+                    padding-left: 10px;
+                    line-height:40px ;
+                }
+                & p{
+                    position: absolute;
+                    content: '';
+                    top: 4px;
+                    right: 100px;
+                    width: 1px;
+                    height: 30px;
+                    background-color: #ccc;
+                }
+                & .ipt-code{
+                    text-indent: 90px;
+                    cursor: pointer;
+                    color: blue;
+                    padding: 10px;
+                }
+            }
+            & .phone-stop{
+                color: blue;
+                cursor: pointer;
+                margin-top: 15px;
+            }
+            & .verify{
+                @include verifydone;
+            }
+            & .phone-verify{
+                margin-top: 12px;
+                font-size: 12px;
+                display: none;
+            }
+            & .anew{
+                margin-top: 10px;
+                width: 400px;
+                color: #888;
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+ 

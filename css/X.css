@@ -5,6 +5,10 @@ img{vertical-align:top ;border: none;}
 body{font-family:"微软雅黑";font-size:12px;}
 .clearfix:after{content:"";clear:both;height:0;overflow:hidden;display:block;visibility:hidden;font-size:0;}
 
+.head-z{
+	position: relative;
+	margin-bottom:61px ;
+}
 
 .head1{
 	width: 100%;
@@ -37,9 +41,16 @@ justify-content: space-between;
 align-items: center;
 }
 .head2-a ul li a:hover{color:#506cff;}
-.head3{width: 100%;
-height: 61px; display: flex;
-justify-content: center;}
+.head3{
+	position:absolute;
+	top: 100px;
+	left: 0px;
+	width: 100%;
+	height: 61px; 
+	display: flex;
+	justify-content: center;
+	background: #fff;
+}
 .head3-a{width: 1200px;
 height: 61px;display: flex;
 justify-content:space-between;
@@ -79,7 +90,7 @@ margin-bottom:12px;
 .nav-a{width: 1000px;
 height: 321px;
 background: white;
-border-top: 1px solid #e5e5e5;
+/*border-top: 1px solid #e5e5e5;*/
 /*display:flex;justify-content: center;*//*overflow: hidden;*/
 }
 .nav-a .div1{height: 48px;
@@ -168,7 +179,7 @@ height: 777px;
 width: 100%;
 display: flex;
 justify-content: center;
-background:url(../img/8.jpg);
+background:url(../images/img/8.jpg);
 }
 .nav-4 .nav-b{
 	width: 1000px;
@@ -234,18 +245,193 @@ background:url(../img/8.jpg);
 	margin-top: 12px;
 	margin-right: 22px;
 	}
-.X-nav-5 .right button:hover{background-color: #f8d0e2;}
+.X-nav-5 .right button:hover{
+	background-color: #f8d0e2;
+	}
 
-.X-nav-6{width: 100%;height: 810px;background:url(../img/7.jpg);;display: flex;justify-content: center;}
-.X-nav-a{width: 1000px;height: 100%;}
-.X-nav-6 .top{width: 1000px;height: 327px;}
-.X-nav-6 .top h1{width: 1000px;font-size: 40px;margin-top: 77px;margin-bottom: 28px;/*display: flex;justify-content: center;*/}
-.X-nav-6 .top p{font-size: 18px;line-height: 34px;}
-.X-nav-6 .top .p1{width: 752px;font-size: 14px;color: #797476;}
-.X-nav-6 .top button{width: 198px;height: 43px;border:1px solid #94a2f7;background-color:white;border-radius: 30px;color: #569af3;margin-top: 40px;}
-.X-nav-6 .top button:hover{background-color: #415fff;color: white;}
-.X-nav-6 .butt img{float: right;margin-top: -85px;margin-right: -174px;width: 100%;height: 100%;}
-.X-nav-7{height: 172px;background: white;display: flex;justify-content: center;}
-.X-nav-7{width: 100%;height: 100%;margin-top: 54px;margin-bottom: 62px;}
+.X-nav-6{
+	width: 100%;
+	height: 810px;
+	background:url(../images/img/7.jpg);
+	display: flex;
+	justify-content: center;
+	}
+.X-nav-a{
+	width: 1000px;
+	height: 100%;
+	}
+.X-nav-6 .top{
+	width: 1000px;
+	height: 327px;
+	}
+.X-nav-6 .top h1{
+	width: 1000px;
+	font-size: 40px;
+	margin-top: 77px;
+	margin-bottom: 28px;
+	/*display: flex;justify-content: center;*/
+	}
+.X-nav-6 .top p{
+	font-size: 18px;
+	line-height: 34px;
+	}
+.X-nav-6 .top .p1{
+	width: 752px;
+	font-size: 14px;
+	color: #797476;
+	}
+.X-nav-6 .top button{
+	width: 198px;
+	height: 43px;
+	border:1px solid #94a2f7;
+	background-color:white;
+	border-radius: 30px;
+	color: #569af3;
+	margin-top: 40px;
+	}
+.X-nav-6 .top button:hover{
+	background-color: #415fff;
+	color: white;
+	}
+.X-nav-6 .butt img{
+	float: right;
+	margin-top: -85px;
+	margin-right: -174px;
+	width: 100%;
+	height: 100%;
+	}
+.X-nav-7{
+	height: 172px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	}
+.X-nav-7{
+	width: 100%;
+	height: 100%;
+	margin-top: 54px;
+	margin-bottom: 62px;
+	}
+	.X-nav-8{
+		height: 952px;
+		width: 100%;
+		background-color: #f6f5fc;
+		display: flex;
+		justify-content: center;
+	}
+	.X-nav-8 .z{width: 960px;height: 952px;background-color: #f6f5fc;}
+	.X-nav-8 .top{
+		margin-top: 76px;
+		height: 184px;		
+		}
+	.X-nav-8 .top .p1{
+		font-size: 40px;
+		width: 900px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 25px;
+	}
+	.X-nav-8 .top .p2{
+		height: 72px;
+		width: 900px;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		line-height: 34px;
+	}
+.X-nav-8 span{
+	display:inline-block;
+	margin: 0 auto;
+	width:960px;
+	display: flex;
+	justify-content: center;
+	}
+.X-nav-8 button{width: 128px;
+height: 43px;
+background-color: white;
+border-radius: 30px;
+border: 1px solid pink;
+color: plum;
+margin-top: -20px;
+}
+.X-nav-8 .z span .but1:hover{
+	background-color: paleturquoise;
+	color: white;
+	}
+.X-nav-8 .butt2{
+		height: 457px;
+		width: 960px;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		margin-top: 70px;
+		margin-bottom: 60px;
+	}
+	.X-nav-8 .butt #x{
+		width: 960px;
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+	}
+	.X-nav-8 .z #x .but2{width: 53px;
+	height: 6px;
+	margin-right: 50px;
+	margin-left: 50px;
+	background-color: pink;
+	}
+	.X-nav-8 .z #x .but2:hover{
+	background-color: paleturquoise;
+	color: white;
+	}
 
+	.home_footer {
+  width: 100%;
+  padding-top: 80px;
+  background: #F7F7F7; }
+  .home_footer .contain_inner {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between; }
+    .home_footer .contain_inner .home_footer_l {
+      background: #f7f7f7; }
+      .home_footer .contain_inner .home_footer_l .footer_l {
+        float: left;
+        width: 180px;
+        padding-left: 10px; }
+        .home_footer .contain_inner .home_footer_l .footer_l h3 {
+          font-size: 16px;
+          color: #333;
+          padding-bottom: 40px; }
+        .home_footer .contain_inner .home_footer_l .footer_l li {
+          margin-bottom: 18px; }
+          .home_footer .contain_inner .home_footer_l .footer_l li a {
+            font-size: 14px;
+            color: #999; }
+    .home_footer .contain_inner .home_footer_r {
+      width: 180px; }
+      .home_footer .contain_inner .home_footer_r > a {
+        display: block;
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 28px; }
+      .home_footer .contain_inner .home_footer_r span {
+        font-size: 24px;
+        color: #415FFF; }
+      .home_footer .contain_inner .home_footer_r p, .home_footer .contain_inner .home_footer_r div {
+        font-size: 14px;
+        color: #333;
+        padding: 0 0 10px; }
+      .home_footer .contain_inner .home_footer_r div {
+        margin-top: 40px; }
+      .home_footer .contain_inner .home_footer_r a .iconfont {
+        font-size: 20px;
+        margin-left: 16px;
+        font-weight: bold; }
+        .home_footer .foot {
+    border-top: 1px solid #999;
+    background: #F7F7F7;
+    text-align: center;
+    padding: 30px;
+    margin-top: 74px; }
 

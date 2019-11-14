@@ -28,12 +28,13 @@
   overflow: hidden; }
   .home_main .home_m {
     height: 400px;
-    overflow: hidden; }
+    overflow: hidden;
+    width: 100%; }
     .home_main .home_m .home_main_1 {
       position: relative;
       float: left;
-      width: 670px;
-      height: 580px;
+      width: 49.7%;
+      height: 650px;
       margin-right: 6px;
       overflow: hidden; }
       .home_main .home_m .home_main_1 .img01 {
@@ -44,7 +45,7 @@
       .home_main .home_m .home_main_1 .main_1_con {
         position: absolute;
         top: 30px;
-        left: 200px;
+        left: 300px;
         color: #000;
         text-align: center; }
         .home_main .home_m .home_main_1 .main_1_con h2 {
@@ -54,8 +55,8 @@
           padding: 6px; }
     .home_main .home_m .home_main_2 {
       position: relative;
-      width: 670px;
-      height: 580px;
+      width: 49.7%;
+      height: 650px;
       float: left;
       overflow: hidden; }
       .home_main .home_m .home_main_2 .img02 {
@@ -66,7 +67,7 @@
       .home_main .home_m .home_main_2 .main_2_con {
         position: absolute;
         top: 30px;
-        left: 200px;
+        left: 300px;
         color: #000;
         text-align: center; }
         .home_main .home_m .home_main_2 .main_2_con h2 {
@@ -139,7 +140,7 @@
     flex-grow: 0; }
     .home_main .home_main_5 div {
       position: relative;
-      width: 340px;
+      width: 25%;
       height: 400px;
       overflow: hidden; }
     .home_main .home_main_5 .main_51 {
@@ -147,9 +148,10 @@
       background-position: center;
       background-size: cover; }
       .home_main .home_main_5 .main_51 .main_5_con1 {
+        width: 300px;
         position: absolute;
         top: 30px;
-        left: 0px;
+        left: 30px;
         color: #000;
         text-align: center; }
         .home_main .home_main_5 .main_51 .main_5_con1 h2 {
@@ -164,7 +166,8 @@
       .home_main .home_main_5 .main_52 .main_5_con2 {
         position: absolute;
         top: 30px;
-        left: 0px;
+        width: 300px;
+        left: 30px;
         color: white;
         text-align: center; }
         .home_main .home_main_5 .main_52 .main_5_con2 h2 {
@@ -179,7 +182,8 @@
       .home_main .home_main_5 .main_53 .main_5_con3 {
         position: absolute;
         top: 30px;
-        left: 0px;
+        width: 300px;
+        left: 30px;
         color: white;
         text-align: center; }
         .home_main .home_main_5 .main_53 .main_5_con3 h2 {
@@ -194,7 +198,8 @@
       .home_main .home_main_5 .main_54 .main_5_con4 {
         position: absolute;
         top: 30px;
-        left: 0px;
+        width: 300px;
+        left: 30px;
         color: white;
         text-align: center; }
         .home_main .home_main_5 .main_54 .main_5_con4 h2 {

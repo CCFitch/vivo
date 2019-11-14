@@ -1,0 +1,318 @@
+.content {
+  background-color: #fff;
+  width: 860px;
+  margin: 0 auto; }
+
+#wrap {
+  background-color: #f7f7f5;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px; }
+  #wrap .per-center {
+    padding-top: 60px; }
+    #wrap .per-center .loginimg {
+      width: 160px;
+      height: 42px;
+      margin: 0 auto; }
+      #wrap .per-center .loginimg img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer; }
+    #wrap .per-center .title {
+      text-align: center;
+      font-size: 20px;
+      color: #333;
+      margin-top: 30px; }
+    #wrap .per-center .acc-set {
+      width: 730px;
+      margin: 0 auto;
+      line-height: 30px;
+      margin-top: 20px; }
+      #wrap .per-center .acc-set .set-name {
+        float: right;
+        width: 30px;
+        height: 30px; }
+        #wrap .per-center .acc-set .set-name img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          display: block; }
+      #wrap .per-center .acc-set .noset {
+        float: right;
+        margin: 0 40px 0 10px; }
+      #wrap .per-center .acc-set .loginout {
+        float: right;
+        cursor: pointer; }
+        #wrap .per-center .acc-set .loginout a:hover {
+          color: blue; }
+  #wrap .bbl {
+    width: 740px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+    margin-top: 5px; }
+  #wrap .safety-set {
+    margin-top: 18px; }
+    #wrap .safety-set .sst-title {
+      padding-left: 65px; }
+    #wrap .safety-set .acc-list {
+      width: 860px;
+      padding: 30px 65px 0;
+      box-sizing: border-box;
+      min-height: 110px;
+      position: relative; }
+      #wrap .safety-set .acc-list .list {
+        height: 60px; }
+        #wrap .safety-set .acc-list .list .acc-phtot {
+          float: left; }
+          #wrap .safety-set .acc-list .list .acc-phtot img {
+            display: inline-block;
+            width: 30px;
+            height: 34px;
+            margin-top: 14px; }
+        #wrap .safety-set .acc-list .list .acc-pass {
+          float: left;
+          margin-left: 60px; }
+          #wrap .safety-set .acc-list .list .acc-pass .span1 {
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 2;
+            margin-bottom: 14px; }
+          #wrap .safety-set .acc-list .list .acc-pass .phone-set {
+            overflow: hidden;
+            margin-bottom: 14px; }
+            #wrap .safety-set .acc-list .list .acc-pass .phone-set .span2 {
+              float: left;
+              font-size: 16px;
+              margin-top: 2; }
+            #wrap .safety-set .acc-list .list .acc-pass .phone-set .phone {
+              float: left;
+              margin-left: 20px; }
+        #wrap .safety-set .acc-list .list .acc-amend {
+          float: right;
+          margin-top: 14px;
+          height: 30px;
+          width: 70px;
+          border: 1px solid #333;
+          border-radius: 4px;
+          text-align: center;
+          line-height: 30px;
+          cursor: pointer; }
+          #wrap .safety-set .acc-list .list .acc-amend:hover {
+            background-color: #ccc; }
+          #wrap .safety-set .acc-list .list .acc-amend span {
+            font-size: 14px; }
+        #wrap .safety-set .acc-list .list .bb-line {
+          position: absolute;
+          bottom: 0;
+          right: 65px;
+          width: 640px;
+          height: 1px;
+          background-color: #ccc;
+          margin: 0 auto;
+          margin-top: 5px; }
+    #wrap .safety-set .bind {
+      min-height: 100px;
+      margin-bottom: 60px; }
+      #wrap .safety-set .bind h2 {
+        width: 730px;
+        margin: 0 auto;
+        margin-top: 30px; }
+      #wrap .safety-set .bind .login-bind {
+        padding: 30px 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #wrap .safety-set .bind .login-bind .weixin {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #wrap .safety-set .bind .login-bind .weixin .icon-weixin {
+            font-size: 40px;
+            color: blue; }
+          #wrap .safety-set .bind .login-bind .weixin .weixin-box {
+            font-size: 14px;
+            margin-left: 20px; }
+            #wrap .safety-set .bind .login-bind .weixin .weixin-box p {
+              margin-bottom: 6px; }
+            #wrap .safety-set .bind .login-bind .weixin .weixin-box span {
+              color: blue;
+              cursor: pointer; }
+        #wrap .safety-set .bind .login-bind .zhifubao {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #wrap .safety-set .bind .login-bind .zhifubao .icon-zhifubao {
+            font-size: 40px;
+            color: blue; }
+          #wrap .safety-set .bind .login-bind .zhifubao .zhifubao-box {
+            font-size: 14px;
+            margin-left: 20px; }
+            #wrap .safety-set .bind .login-bind .zhifubao .zhifubao-box p {
+              margin-bottom: 6px; }
+            #wrap .safety-set .bind .login-bind .zhifubao .zhifubao-box span {
+              color: blue;
+              cursor: pointer; }
+        #wrap .safety-set .bind .login-bind .weibo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #wrap .safety-set .bind .login-bind .weibo .icon-tubiaozhizuo- {
+            font-size: 40px;
+            color: blue; }
+          #wrap .safety-set .bind .login-bind .weibo .weibo-box {
+            font-size: 14px;
+            margin-left: 20px; }
+            #wrap .safety-set .bind .login-bind .weibo .weibo-box p {
+              margin-bottom: 6px; }
+            #wrap .safety-set .bind .login-bind .weibo .weibo-box span {
+              color: blue;
+              cursor: pointer; }
+
+#footer {
+  text-align: center;
+  background: #f7f7f5;
+  height: 150px; }
+  #footer .service {
+    padding: 30px 0 10px 0; }
+    #footer .service a:hover {
+      color: blue; }
+
+.per-accent-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; }
+  .per-accent-wrap .change-pass {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    width: 500px;
+    background-color: #fff;
+    min-height: 400px;
+    padding: 50px 65px;
+    box-sizing: border-box;
+    font-size: 16px; }
+    .per-accent-wrap .change-pass .clone {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 18px;
+      color: #ccc;
+      cursor: pointer; }
+    .per-accent-wrap .change-pass h2 {
+      text-align: center;
+      font-size: 20px;
+      color: #000; }
+    .per-accent-wrap .change-pass .change-pass-old, .per-accent-wrap .change-pass .change-pass-new, .per-accent-wrap .change-pass .change-pass-verify {
+      margin-top: 30px;
+      margin-bottom: 10px; }
+      .per-accent-wrap .change-pass .change-pass-old h3, .per-accent-wrap .change-pass .change-pass-new h3, .per-accent-wrap .change-pass .change-pass-verify h3 {
+        font-size: 16px;
+        margin-bottom: 10px; }
+      .per-accent-wrap .change-pass .change-pass-old .txt, .per-accent-wrap .change-pass .change-pass-new .txt, .per-accent-wrap .change-pass .change-pass-verify .txt {
+        width: 350px;
+        height: 40px;
+        border: 1px solid #ccc;
+        padding-left: 10px; }
+    .per-accent-wrap .change-pass .hint {
+      color: #ccc; }
+    .per-accent-wrap .change-pass .change-pass-done {
+      background-color: blue;
+      color: #fff;
+      text-align: center;
+      width: 350px;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 20px;
+      padding-left: 10px;
+      cursor: pointer; }
+
+.per-id-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; }
+  .per-id-wrap .id-verify {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    width: 500px;
+    background-color: #fff;
+    min-height: 400px;
+    padding: 50px 65px;
+    box-sizing: border-box;
+    font-size: 16px; }
+    .per-id-wrap .id-verify .clone {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 18px;
+      color: #ccc;
+      cursor: pointer; }
+    .per-id-wrap .id-verify h2 {
+      text-align: center;
+      font-size: 20px;
+      color: #000; }
+    .per-id-wrap .id-verify h3 {
+      text-align: center;
+      margin-top: 20px;
+      color: #333;
+      font-size: 14px; }
+    .per-id-wrap .id-verify .code-box {
+      margin-top: 30px; }
+      .per-id-wrap .id-verify .code-box .phone-code {
+        color: #333;
+        font-size: 14px; }
+      .per-id-wrap .id-verify .code-box .info {
+        margin-top: 20px;
+        width: 360px;
+        height: 40px;
+        border: 1px solid #ccc;
+        position: relative; }
+        .per-id-wrap .id-verify .code-box .info .txt {
+          padding-left: 10px;
+          line-height: 40px; }
+        .per-id-wrap .id-verify .code-box .info p {
+          position: absolute;
+          content: '';
+          top: 4px;
+          right: 100px;
+          width: 1px;
+          height: 30px;
+          background-color: #ccc; }
+        .per-id-wrap .id-verify .code-box .info .ipt-code {
+          text-indent: 90px;
+          cursor: pointer;
+          color: blue;
+          padding: 10px; }
+      .per-id-wrap .id-verify .code-box .phone-stop {
+        color: blue;
+        cursor: pointer;
+        margin-top: 15px; }
+      .per-id-wrap .id-verify .code-box .verify {
+        background-color: blue;
+        color: #fff;
+        text-align: center;
+        width: 350px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+        padding-left: 10px;
+        cursor: pointer; }
+      .per-id-wrap .id-verify .code-box .phone-verify {
+        margin-top: 12px;
+        font-size: 12px;
+        display: none; }
+      .per-id-wrap .id-verify .code-box .anew {
+        margin-top: 10px;
+        width: 400px;
+        color: #888;
+        font-size: 14px; }

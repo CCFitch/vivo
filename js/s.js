@@ -1,14 +1,21 @@
 $(function(){
+    var heightV =parseInt($('.s_pin9three video').css('height'))
+    var widthV = parseInt($('.s_pin9three video').css('width'))
+    //  console.log(height,width)
+
     $(window).on('scroll',function(){
         var html = document.documentElement || document.body;
+        // console.log(html.scrollTop)
         //header设置
         if(html.scrollTop <= 0){
             $('.s_headerT').css('background','none')
+            $('.s_headerT').css('top',105)
             $('.s_up').css('display','none')
 
         }
         if(html.scrollTop >= 68){
             $('.s_headerT').css('background','white')
+            $('.s_headerT').css('top',0)
             $('.s_up').css('display','block')
         }
 
@@ -109,6 +116,31 @@ $(function(){
                 width: 10
             },300,'linear');
         })
+        //第九屏
+        if(html.scrollTop>=6000  && html.scrollTop<=6864){
+            $('.s_pin9three').css('opacity',1)
+                heightV+=100;
+                widthV+=100
+                    if(widthV>=$(window).width() ){
+                       widthV = $(window).width()
+                    }
+                    if(heightV >= $('.s_pin9three').height()){
+                        heightV = $('.s_pin9three').height()
+                    }
+            $('.s_pin9three video').animate({
+                        height: heightV,
+                        width: widthV
+                    },500)     
+            }
+
+            if(html.scrollTop<=6000 || html.scrollTop>=6864){
+                $('.s_pin9three').css('opacity',0.1)
+                $('.s_pin9three video').stop()
+                $('.s_pin9three video').width('50%')
+                $('.s_pin9three video').height('50%')
+                
+            }
+
 
 
         //返回顶部
@@ -132,12 +164,10 @@ $(function(){
            //购买
            $('.s_header').on('click','.buy',function(){
             location.href = '../global/buy.html?id=S_series' 
-            console.log(666)
            })
 
            $('.s_pin1 .s_buypath').on('click','.s_official',function(){
-            // location.href = '../global/buy.html?id=S_series'
-            console.log(666)
+            location.href = '../global/buy.html?id=S_series'
            })
 
            $('.s_pin2_adv').on('click','.s_pin2_buy',function(){

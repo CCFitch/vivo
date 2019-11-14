@@ -111,7 +111,7 @@
                     top:32px;
                     background:#fff;
                     padding:10px 0px;
-                    z-index: 4;
+                    z-index:100;
                     p{
                         // display: block;
                         padding:14px 20px;
@@ -165,7 +165,7 @@
         position:absolute;
         left:0px;
         top:32px;
-        z-index: 2;
+        z-index: 4;
         box-sizing: border-box;
         background:none;
         .home_nav{
@@ -177,7 +177,7 @@
             .home_logo .icon-VIVO{
                 font-size:26px;
                 font-weight: bold;
-                color:white;
+                color:#000;
                 margin-right:80px;
             }
             .home_phones{
@@ -198,7 +198,7 @@
                     padding:0 22px;
                     a{
                         font-size:16px;
-                        color:white;
+                        color:#000;
                         line-height:68px;
                         font-weight: 500;
                     }
@@ -221,13 +221,13 @@
         }
 }
 .h_search{
-    display: none;
+    display: none;  
     width:100%;
     position: absolute;
     top:32px;
     min-height: 350px;
     background:white;
-    z-index: 2;
+    z-index: 3;
     .icon-VIVO{
         float: left;
         margin-left:80px;
@@ -263,6 +263,7 @@
                 right:10px;
                 top:10px;
                 font-size: 40px;
+                z-index: 3;
             }
         }
         .sch_lish{

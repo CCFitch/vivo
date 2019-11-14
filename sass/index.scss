@@ -270,14 +270,15 @@
     .home_m{
         height:400px;
         overflow: hidden;
+        width:100%;
         // img{
         //     width:1200px;
         // }
         .home_main_1{
             position: relative;
             float: left;
-            width:670px;
-            height:580px;
+            width:49.7%;
+            height:650px;
             margin-right:6px;
             overflow: hidden;
             .img01{
@@ -289,7 +290,7 @@
             .main_1_con{
                 position: absolute;
                 top:30px;
-                left:200px;
+                left:300px;
                 color:#000;
                 text-align: center;
                 h2{
@@ -303,8 +304,8 @@
         }
         .home_main_2{
             position: relative;
-            width:670px;
-            height:580px;
+            width:49.7%;
+            height:650px;
             float: left;
             overflow: hidden;
             .img02{
@@ -316,7 +317,7 @@
             .main_2_con{
                 position: absolute;
                 top:30px;
-                left:200px;
+                left:300px;
                 color:#000;
                 text-align: center;
                 h2{
@@ -413,7 +414,7 @@
         // }
         div{
             position: relative;
-            width:340px;
+            width:25%;
             height:400px;
             overflow: hidden;
         }
@@ -427,9 +428,10 @@
             //     top:0;
             // }
             .main_5_con1{
+                width:300px;
                 position: absolute;
                 top:30px;
-                left:0px;
+                left:30px;
                 color:#000;
                 text-align: center;
                 h2{
@@ -453,7 +455,8 @@
             .main_5_con2{
                 position: absolute;
                 top:30px;
-                left:0px;
+                width:300px;
+                left:30px;
                 color:white;
                 text-align: center;
                 h2{
@@ -477,7 +480,8 @@
             .main_5_con3{
                 position: absolute;
                 top:30px;
-                left:0px;
+                width:300px;
+                left:30px;
                 color:white;
                 text-align: center;
                 h2{
@@ -501,7 +505,8 @@
             .main_5_con4{
                 position: absolute;
                 top:30px;
-                left:0px;
+                width:300px;
+                left:30px;
                 color:white;
                 text-align: center;
                 h2{

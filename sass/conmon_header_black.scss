@@ -1,0 +1,290 @@
+@mixin phones{
+    display: none;
+    width:100%;
+    position: fixed;
+    top:0px;
+    left:0;
+    height:384px;
+    z-index: -1;
+    ._list{
+        margin-left:150px;
+        margin-top:96px;
+        float: left;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        li{
+            position: relative;
+            width:100px;
+            height:194px;
+            padding:0 40px;
+            text-align: center;
+            img{
+                position: absolute;
+                left:80px;
+                top:10px;
+            }
+            .phone_img1{
+                left:60px;
+            }
+            p{
+                line-height:18px;
+                margin-top:200px;
+                color:#999;
+                font-size:16px;
+            }
+            span{
+                padding-top:10px;
+                line-height:16px;
+                display:block;
+                color:#415FFF;
+                font-size:12px;
+            }
+        }
+    }
+    .home_compl{
+        float: left;
+        margin:128px 0 0 0;
+        div{
+            text-align: center;
+            color:#333;
+            line-height:30px;
+            padding:10px 30px;
+            margin-bottom:15px;
+            border-radius: 26px;
+            background:#F1F1F1;
+            font-size:14px;
+            .icon-cedaohang-mokuai,.icon-shouji{
+                line-height:30px;
+                font-size:30px;
+            }
+        }
+        div:hover{
+            background:#415FFF;
+            color:white;
+        }
+    }
+}
+
+.home_header{
+    overflow: hidden;
+    .home_top{
+        width:100%;
+        background:#333;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            justify-content: flex-start;            
+        }
+        ul li {
+            height:32px;
+            a{
+                line-height:32px;
+                text-align: center;
+                color:#ccc;
+            }
+            a:hover{
+                color:#999;
+            }
+        }
+        .home_top_r{
+            margin-right:48px;
+
+            .home_goods{
+                margin-right:42px;
+            }
+            .home_login{
+                margin-right:18px;
+            }
+            .home_rest{
+                margin-left:18px;
+            }
+            .home_per{
+                margin-left:18px;
+                .home_per_list{
+                    // display: block;
+                    display: none;
+                    position: absolute;    
+                    right: 0;
+                    top:32px;
+                    background:#fff;
+                    padding:10px 0px;
+                    z-index: 4;
+                    p{
+                        // display: block;
+                        padding:14px 20px;
+                        height: 32px;
+                        border-bottom:1px solid #ccc;
+                        a{
+                            text-align: center;
+                            color:#6b6b6b;
+                            // display: block;
+                            font-size: 16px;
+                            padding:14px 30px;
+                            box-sizing: border-box;
+                            .iconfont{
+                                margin-right:10px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    p:last-of-type a{
+                        border-bottom:none;
+                    }
+                    p:hover{
+                        background:#f2f2f2;
+                    }    
+                    p:hover a{
+                        color:#415fff;
+                    }
+                }
+            }
+
+            
+            span{
+                margin-top:7px;
+                color:#999;
+            }
+        }
+        .home_top_l{
+            margin-left:48px;
+            li{
+                margin-right:42px;
+            }
+        }
+    }
+
+}
+
+
+.home_guide{
+        width:100%;
+        padding-left:80px;
+        position:absolute;
+        left:0px;
+        top:32px;
+        z-index: 1;
+        box-sizing: border-box;
+        background:none;
+        .home_nav{
+            // position: relative;
+            height:68px;
+            line-height: 68px;
+            display: flex;
+            justify-content: flex-start;
+            .home_logo .icon-VIVO{
+                font-size:26px;
+                font-weight: bold;
+                color:#fff;
+                margin-right:80px;
+            }
+            .home_phones{
+                display: flex;
+                justify-content: space-between;
+                margin-right:20px;
+                .mask_phone{
+                    display: none;
+                    width:100%;
+                    position: fixed;
+                    top:0px;
+                    left:0;
+                    height:396px;
+                    z-index: -1;
+                    background:#fff;
+                }
+                li{
+                    padding:0 22px;
+                    a{
+                        font-size:16px;
+                        color:#fff;
+                        line-height:68px;
+                        font-weight: 500;
+                    }
+                    // .phone_iQOO,.phone_NEX,.phone_X,.phone_S,.phone_Z,.phone_Y,.phone_U,.phone_ear
+                    .phone_to{
+                        @include phones
+                    }
+                }
+            }
+            .home_search{
+                height:68px;
+                width:68px;
+                text-align: center;
+                .icon-magnifier{
+                    line-height:68px;
+                    font-size:22px;
+                    color:#ccc;
+                }
+            }
+        }
+}
+.h_search{
+    display: none;  
+    width:100%;
+    position: absolute;
+    top:32px;
+    min-height: 350px;
+    background:white;
+    z-index: 2;
+    .icon-VIVO{
+        float: left;
+        margin-left:80px;
+        font-size:26px;
+        font-weight: bold;
+        color:#000;
+        margin-right:100px;
+        padding:20px 0 27px 0;
+    }
+    .h_sch{
+        float: left;
+        .sch{
+            position: relative;
+            padding:20px 0 19px 0;
+            .h_ipt{
+                display: block;
+                width:680px;
+                height:50px;
+                padding:0 90px 0 20px;
+                border-bottom:1px solid #eee;
+            }
+            .icon-magnifier{
+                position: absolute;
+                right:50px;
+                color:#999;
+                top:24px;
+                font-size:26px;
+                font-weight: bold;
+            }   
+            .cha{
+                position: absolute;
+                color:#999;
+                right:10px;
+                top:10px;
+                font-size: 40px;
+            }
+        }
+        .sch_lish{
+            width:680px;
+            li{
+                line-height:40px;
+                height:40px;
+                padding:10px 44px;
+                color:#666;
+                font-size:15px;
+            }
+            li:hover{
+                background:#F2F2F2;
+                color:#BDC6F6;
+                cursor: pointer;
+            }
+        }
+        p{
+            width:680px;
+            height:36px;
+            padding:24px 0 0 20px;
+            color:#999;
+        }
+    }
+}

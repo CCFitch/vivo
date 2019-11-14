@@ -21,6 +21,7 @@ body {
     color: #fff;
     padding-right: 20px; }
   .nex_top a span {
+    line-height: 30px;
     display: inline-block;
     color: #fff;
     font-size: 14px;
@@ -235,14 +236,16 @@ body {
     .nex_main .nex_img6 .nex6_i2 {
       position: absolute;
       top: 350px;
-      left: 590px; }
+      left: 590px;
+      z-index: 0; }
     .nex_main .nex_img6 .img6_con {
       position: absolute;
       color: #333;
       text-align: center;
       top: 30px;
       left: 250px;
-      width: 900px; }
+      width: 900px;
+      z-index: 0; }
       .nex_main .nex_img6 .img6_con h2 {
         margin-top: 10px;
         font-size: 40px;
@@ -340,59 +343,6 @@ body {
         margin: 40px 0px 0 0px;
         border-radius: 20px;
         border: 2px solid #fff; }
-  .nex_main .nex_img9 {
-    height: 1200px;
-    width: 100%;
-    overflow: hidden;
-    background: #fff;
-    position: relative; }
-    .nex_main .nex_img9 .img9_con {
-      position: absolute;
-      color: #000;
-      text-align: left;
-      top: 20px;
-      left: 200px;
-      width: 500px; }
-      .nex_main .nex_img9 .img9_con h2 {
-        margin-top: 10px;
-        font-size: 40px;
-        color: blue;
-        font-weight: bold; }
-      .nex_main .nex_img9 .img9_con h3 {
-        font-size: 40px;
-        font-weight: bold; }
-      .nex_main .nex_img9 .img9_con p {
-        padding: 10px 0;
-        font-size: 18px;
-        line-height: 30px; }
-      .nex_main .nex_img9 .img9_con span a {
-        display: inline-block;
-        padding: 8px 14px;
-        color: #000;
-        font-weight: bold;
-        font-size: 16px;
-        margin: 40px 0px 0 0px;
-        border-radius: 20px;
-        border: 2px solid #fff; }
-    .nex_main .nex_img9 .img9 {
-      position: absolute;
-      top: 0;
-      right: 200px; }
-      .nex_main .nex_img9 .img9 .nex9_1 {
-        width: 250px;
-        position: absolute;
-        right: 50px;
-        top: 0; }
-      .nex_main .nex_img9 .img9 .nex9_mask {
-        width: 250px;
-        position: absolute;
-        right: 50px;
-        top: 0; }
-      .nex_main .nex_img9 .img9 ._line {
-        display: none;
-        position: absolute;
-        top: -50px;
-        right: 100px; }
   .nex_main .nex_img10 {
     height: 900px;
     overflow: hidden;
@@ -401,7 +351,8 @@ body {
       position: absolute;
       left: 0px;
       top: 0px;
-      height: 900px; }
+      height: 900px;
+      z-index: 1; }
     .nex_main .nex_img10 .mask {
       position: absolute;
       top: 0;
@@ -416,7 +367,8 @@ body {
       top: 650px;
       left: 200px;
       width: 400px;
-      z-index: 1; }
+      z-index: 2;
+      height: 600px; }
       .nex_main .nex_img10 .img10_con h2 {
         margin-top: 10px;
         font-size: 40px;
@@ -429,6 +381,130 @@ body {
         padding: 10px 0;
         font-size: 18px;
         line-height: 30px; }
+  .nex_main .nex_img9 {
+    height: 3000px;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    position: relative; }
+    .nex_main .nex_img9 .fix_inner {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; }
+      .nex_main .nex_img9 .fix_inner .img9_con {
+        position: absolute;
+        color: #000;
+        text-align: left;
+        top: 40px;
+        left: 200px;
+        width: 500px; }
+        .nex_main .nex_img9 .fix_inner .img9_con h2 {
+          margin-top: 10px;
+          font-size: 40px;
+          color: blue;
+          font-weight: bold; }
+        .nex_main .nex_img9 .fix_inner .img9_con h3 {
+          font-size: 40px;
+          font-weight: bold; }
+        .nex_main .nex_img9 .fix_inner .img9_con p {
+          padding: 10px 0;
+          font-size: 18px;
+          line-height: 30px; }
+        .nex_main .nex_img9 .fix_inner .img9_con span a {
+          display: inline-block;
+          padding: 8px 14px;
+          color: #000;
+          font-weight: bold;
+          font-size: 16px;
+          margin: 40px 0px 0 0px;
+          border-radius: 20px;
+          border: 2px solid #fff; }
+      .nex_main .nex_img9 .fix_inner .img9_con2 {
+        display: none;
+        position: absolute;
+        color: #000;
+        text-align: left;
+        top: 200px;
+        left: 200px;
+        width: 500px; }
+        .nex_main .nex_img9 .fix_inner .img9_con2 h2 {
+          margin-top: 10px;
+          font-size: 40px;
+          color: blue;
+          font-weight: bold; }
+        .nex_main .nex_img9 .fix_inner .img9_con2 h3 {
+          font-size: 40px;
+          font-weight: bold; }
+        .nex_main .nex_img9 .fix_inner .img9_con2 p {
+          padding: 10px 0;
+          font-size: 18px;
+          line-height: 30px; }
+        .nex_main .nex_img9 .fix_inner .img9_con2 span a {
+          display: inline-block;
+          padding: 8px 14px;
+          color: #000;
+          font-weight: bold;
+          font-size: 16px;
+          margin: 40px 0px 0 0px;
+          border-radius: 20px;
+          border: 2px solid #fff; }
+      .nex_main .nex_img9 .fix_inner .img9 {
+        position: absolute;
+        top: 10px;
+        right: 200px; }
+        .nex_main .nex_img9 .fix_inner .img9 .nex9_1 {
+          width: 250px;
+          position: absolute;
+          right: 50px;
+          top: 0; }
+        .nex_main .nex_img9 .fix_inner .img9 .nex9_2 {
+          width: 250px;
+          position: absolute;
+          right: 50px;
+          top: 0; }
+        .nex_main .nex_img9 .fix_inner .img9 .nex9_3 {
+          width: 254px;
+          position: absolute;
+          right: 50px;
+          top: 0; }
+        .nex_main .nex_img9 .fix_inner .img9 .nex9_mask {
+          width: 248px;
+          border-radius: 30px;
+          position: absolute;
+          right: 51px;
+          top: 1px;
+          z-index: 2;
+          background: #000;
+          opacity: 1; }
+        .nex_main .nex_img9 .fix_inner .img9 .charge {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          right: 200px;
+          top: 160px;
+          z-index: 1; }
+          .nex_main .nex_img9 .fix_inner .img9 .charge .charges {
+            width: 150px;
+            height: 150px; }
+        .nex_main .nex_img9 .fix_inner .img9 .figure {
+          width: 50px;
+          height: 150px;
+          position: absolute;
+          right: 200px;
+          top: 400px;
+          z-index: 3; }
+          .nex_main .nex_img9 .fix_inner .img9 .figure .figures {
+            width: 150px;
+            height: 150px; }
+      .nex_main .nex_img9 .fix_inner ._line {
+        display: none;
+        position: absolute;
+        top: 700px;
+        right: 350px;
+        z-index: -1; }
 
 .s_serve {
   width: 100%;

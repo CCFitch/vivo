@@ -15,7 +15,6 @@
     // 定位背景图里的盒子
 @mixin positionBox {
     position: absolute;
-    top: 40%;
     width: 490px;
     min-height: 180px;
     z-index:10;
@@ -40,10 +39,40 @@
     margin: 0 auto;
     background-size: cover;
     position: relative;
+    & .nex_top {
+        height: 61px;
+        width: 100%;
+        line-height: 61px;
+        position: absolute;
+        top: 100px;
+        display: flex;
+        justify-content: space-between;
+        background: #000;
+        border-bottom: 1px solid #333;
+        z-index: 2;
+      }
+      .nex_top .nex_name {
+        font-size: 30px;
+        color: #fff;
+        padding-left: 80px;
+      }
+      .nex_top strong {
+        font-size: 14px;
+        color: #fff;
+        padding-right: 20px;
+      }
+      .nex_top span {
+        color: #fff;
+        font-size: 14px;
+        padding: 4px 8px;
+        background: blue;
+        border-radius: 11px;
+        margin-right: 80px;
+      }      
     
     & .iQOO-box{
        @include positionBox;
-       
+       top: 260%;
        left: 10%;
         & img{
             width: 100%;
@@ -144,6 +173,7 @@
         @include m60;
         & .slogan,.neo-type{
             @include positionBox;
+            top: 40%;
             & .model{
                 font-size: 24px;
                 color: #fff;

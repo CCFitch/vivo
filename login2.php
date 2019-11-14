@@ -61,14 +61,11 @@ switch($act){
 		$sql = "SELECT COUNT(*) FROM user WHERE username='{$user}'";
 //		echo '$sql';
 		$res = mysqli_query($link,$sql);
-		
 		$row = mysqli_fetch_array($res);
-		
 		if((int)$row[0]>0){
 			echo '{"err":"1","msg":"此用户名已被占用"}';
 			exit();
 		}else{
-			
 			if($pass !=''){
 				$sql = "INSERT INTO user (ID,username,password) VALUES(0,'{$user}','{$pass}')";
 				mysqli_query($link, $sql);

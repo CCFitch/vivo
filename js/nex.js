@@ -1,4 +1,5 @@
 $(document).scroll(function(){
+
     var scrollT = document.documentElement.scrollTop || document.body.scrollTop
     console.log(scrollT)
     if(scrollT==1){
@@ -6,7 +7,7 @@ $(document).scroll(function(){
         $('.nex_img1').hide(0)
         $('.img1_con').show(0)
         $('.nex_img1').fadeIn(500)
-    }
+    } 
     if(scrollT >= 80){
         $('.nex_top').css({'position':'fixed','top':0})
     }else{
@@ -134,16 +135,18 @@ $(document).scroll(function(){
     if(scrollT >= 7015 && scrollT<= 7025){
         $('.nex10_i1').css({position:'fixed',top:0})
         $('.mask').css({position:'fixed',top:0})
+        $('.img9').css({top:600})
     }
     if(scrollT >= 7540 && scrollT<= 7550){
         $('.nex10_i1').css({position:'fixed',top:0})
         $('.mask').css({position:'fixed',top:0})
     }
     if(scrollT >= 7560 && scrollT<= 7650){
-        $('.nex10_i1').css({position:'absolute',top:500})
-        $('.mask').css({position:'absolute',top:500})
+        $('.nex10_i1').css({position:'absolute',top:490})
+        $('.mask').css({position:'absolute',top:490})
         $('.img10_con').css({top:600})
         $('.nex_img10').css({height:1280})
+        $('.img9').css({top:10})
     }
     for(var i = 0;i<100;i++){
         if(scrollT == 7015 + 5*i){
@@ -151,8 +154,118 @@ $(document).scroll(function(){
         }
     }
 
+    //nex9
+    if(scrollT >= 8315 && scrollT<=10100){
+        $('.fix_inner').css({position:"fixed",top:10})
+        $('._line').css({display:'block'})
+    }
+    if(scrollT<8300){
+        $('.fix_inner').css({position:"absolute",top:0})
+        $('.img9').html(`<img src="../images/nex/nex9_1.jpg" alt="" class="nex9_1">
+            <img src="../images/nex/nex9_i2.png" alt="" class="nex9_2">
+                <img src="../images/nex/nex9_mask.png" alt="" class="nex9_mask">
+                <div class="charge">
+                </div>
+        `) 
+    }
+    for(var i = 0;i<300;i++){
+        if(scrollT==8361+i ){
+           $('.nex9_mask').css({opacity:1-0.0035*i}) 
+            $('._line').css('top',670-0.5*i)
+        }
+    } 
+
+    for(var i = 0;i<300;i++){
+        if(scrollT==8731+i ){
+            $('.nex9_mask').css({opacity:0.0035*i}) 
+            $('._line').css('top',500+0.5*i)
+        }
+    } 
+
+    var j = 0
+    setInterval(function(){
+        if(j==50){
+            j=0
+        }
+        $('.charge').html(`<img src="../images/nex/charge_${j}.png" alt="" class
+        = 'charges'>`)
+        j++
+    },1000)
+
+    if(scrollT >= 8900 && scrollT<=9100){
+        $('.img9').html(`<img src="../images/nex/nex9_1.jpg" alt="" class="nex9_1">
+                        <img src="../images/nex/nex9_i2.png" alt="" class="nex9_2"> 
+                        <img src="../images/nex/nex9_mask.png" alt="" class="nex9_mask">
+                        <div class="charge">
+                        </div>
+        `) 
+        $('.img9_con2').hide()
+        
+    }
+    // for(var i = 0;i<200;i++){
+    //     if(scrollT==8900+i){
+    //         $('.nex9_mask').css({opacity:1-0.005*i}) 
+    //     }
+    // }
+    if(scrollT >= 9458 && scrollT<=9556){
+        $('.img9').html(`<img src="../images/nex/nex9_1.jpg" alt="" class="nex9_1">
+                        <img src="../images/nex/nex9_mask.png" alt="" class="nex9_mask">
+                        <div class='figure'></div>
+        `)
+        
+
+    }
+    // for(var i = 0;i<370;i++){
+    //     $('.img9_con2').hide()
+    //     $('._line').css('top',500+0.5*i)
+    //     $('.nex9_mask').css({opacity:1-0.002*i}) 
+    // }
+    for(var i = 0 ;i<=370 ;i++){
+        if(scrollT==9560+i){
+            $('.img9_con').css('top',40-2*i)
+            $('.img9_con').css({opacity:1-0.002*i})
+        }
+    }
+
+    var k = 24
+    setInterval(function(){
+        if(k==46){
+            k=24
+        }
+        $('.figure').html(`<img src="../images/nex/finger_${k}.png" alt="" class='figures'>
+        `)
+        k++
+    },1000)
+
+    for(var i = 0;i<300;i++){
+        if(scrollT>=9900+i && scrollT<=10200){
+           
+            $('._line').css('top',670-0.5*i)
+            $('.img9_con2').show()
+        }
+    } 
+
+    for(var i = 0;i<300;i++){
+        if(scrollT>=10200+i && scrollT<=10500){
+            $('._line').css('top',670+0.5*i)
+        }
+    } 
+
+    if(scrollT>=10200 && scrollT<=10500){
+        $('._line').hide()
+        $('.img9').html(`<img src="../images/nex/nex9_1.jpg" alt="" class="nex9_1">
+                        <img src="../images/nex/nex9_i3.png" alt="" class="nex9_3">
+        `)
+        $('.fix_inner').css({position:'absolute'})
+        $('.fix_inner').css({top:'1930px'})
+        $('.img9_con2').show()
+        $('.img9_con2').css({top:'30px'})
+    }
 
 
+    if(scrollT>10500){
+
+    }
 
 })
 

@@ -14,13 +14,39 @@
   margin: 0 auto;
   background-size: cover;
   position: relative; }
+  #iQOO-main .nex_top {
+    height: 61px;
+    width: 100%;
+    line-height: 61px;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    border-bottom: 1px solid #333;
+    z-index: 2; }
+  #iQOO-main .nex_top .nex_name {
+    font-size: 30px;
+    color: #fff;
+    padding-left: 80px; }
+  #iQOO-main .nex_top strong {
+    font-size: 14px;
+    color: #fff;
+    padding-right: 20px; }
+  #iQOO-main .nex_top span {
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 8px;
+    background: blue;
+    border-radius: 11px;
+    margin-right: 80px; }
   #iQOO-main .iQOO-box {
     position: absolute;
-    top: 40%;
     width: 490px;
     min-height: 180px;
     z-index: 10;
     text-align: center;
+    top: 260%;
     left: 10%; }
     #iQOO-main .iQOO-box img {
       width: 100%;
@@ -97,11 +123,11 @@
     position: relative; }
     .typeP .iQOO-Neo85 .slogan, .typeP .iQOO-Neo85 .neo-type, .typeP .iQOO .slogan, .typeP .iQOO .neo-type, .typeP .iQOONeo .slogan, .typeP .iQOONeo .neo-type {
       position: absolute;
-      top: 40%;
       width: 490px;
       min-height: 180px;
       z-index: 10;
-      text-align: center; }
+      text-align: center;
+      top: 40%; }
       .typeP .iQOO-Neo85 .slogan .model, .typeP .iQOO-Neo85 .neo-type .model, .typeP .iQOO .slogan .model, .typeP .iQOO .neo-type .model, .typeP .iQOONeo .slogan .model, .typeP .iQOONeo .neo-type .model {
         font-size: 24px;
         color: #fff; }
@@ -143,7 +169,6 @@
     position: relative; }
     .typeP .iQOONeo .neo-type {
       position: absolute;
-      top: 40%;
       width: 490px;
       min-height: 180px;
       z-index: 10;

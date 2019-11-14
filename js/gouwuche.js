@@ -339,9 +339,9 @@ if(localStorage.getItem('username')){
         $('.goods_list').html('<li class="goods_tips">您的购物车空空如也！</li>')
         }
     }else if(localStorage.getItem('username') == '森岛帆高'){
-        if(localStorage.getItem('goods') && localStorage.getItem('goods1')){
-            var codeArr = JSON.parse(localStorage.getItem('goods')).code
-            var numArr = JSON.parse(localStorage.getItem('goods1')).num
+        if(localStorage.getItem('goods2') && localStorage.getItem('goods3')){
+            var codeArr = JSON.parse(localStorage.getItem('goods2')).code
+            var numArr = JSON.parse(localStorage.getItem('goods3')).num
             if(codeArr.length >0 && numArr.length >0){
     
                     // 展示商品数据
@@ -397,8 +397,8 @@ if(localStorage.getItem('username')){
                 })
                 var jsonStr = JSON.stringify({"code":codeArr})//更新本地存储
                 var jsonNum = JSON.stringify({"num":numArr})
-                localStorage.setItem('goods',jsonStr)
-                localStorage.setItem('goods1',jsonNum)
+                localStorage.setItem('goods2',jsonStr)
+                localStorage.setItem('goods3',jsonNum)
             })
             if(!($('.goods_list li').html())){
                 $('.goods_list').html('<li class="goods_tips">您的购物车空空如也！</li>')
@@ -419,8 +419,8 @@ if(localStorage.getItem('username')){
                 })
                 var jsonStr = JSON.stringify({"code":codeArr})//更新本地存储
                 var jsonNum = JSON.stringify({"num":numArr})
-                localStorage.setItem('goods',jsonStr)
-                localStorage.setItem('goods1',jsonNum)
+                localStorage.setItem('goods2',jsonStr)
+                localStorage.setItem('goods3',jsonNum)
                 
                 }
                 $('#goods_allcheckbox1').prop('checked',false)

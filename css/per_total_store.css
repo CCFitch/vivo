@@ -1,0 +1,93 @@
+.content {
+  width: 1200px;
+  margin: 0 auto; }
+
+#per-wrap {
+  background: #e7e7e3; }
+  #per-wrap .t-n h2 {
+    font-size: 50px;
+    text-align: center;
+    line-height: 240PX; }
+  #per-wrap .per-n {
+    margin-bottom: 30px; }
+    #per-wrap .per-n a {
+      font-size: 16px;
+      color: #333;
+      padding: 0 8px; }
+    #per-wrap .per-n span {
+      font-size: 14px;
+      color: #888; }
+  #per-wrap .classifiy {
+    background: #fff; }
+    #per-wrap .classifiy dl {
+      font-size: 22px;
+      line-height: 70px; }
+      #per-wrap .classifiy dl dt {
+        color: #333;
+        float: left;
+        margin: 0 40px; }
+      #per-wrap .classifiy dl dd {
+        float: left;
+        color: #ccc;
+        margin: 0 30px;
+        cursor: pointer; }
+        #per-wrap .classifiy dl dd:hover {
+          color: #333; }
+  #per-wrap .per-sort {
+    text-align: right;
+    color: #888;
+    font-size: 16px;
+    line-height: 80px; }
+    #per-wrap .per-sort span {
+      margin: 0 30px; }
+  #per-wrap .per-stroe-list {
+    min-height: 200px;
+    padding-bottom: 100px; }
+    #per-wrap .per-stroe-list li {
+      position: relative;
+      width: 290px;
+      text-align: center;
+      float: left;
+      background: #fff;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      -webkit-transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out; }
+      #per-wrap .per-stroe-list li:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 6px 6px;
+        color: #ccc; }
+      #per-wrap .per-stroe-list li img {
+        display: inline-block;
+        width: 170px;
+        height: 170px;
+        cursor: pointer; }
+      #per-wrap .per-stroe-list li h2 {
+        font-size: 16px;
+        color: #888; }
+      #per-wrap .per-stroe-list li .list-show {
+        display: none;
+        margin-top: 12px;
+        font-size: 14px; }
+        #per-wrap .per-stroe-list li .list-show p {
+          margin: 40px 0;
+          cursor: pointer;
+          color: red; }
+      #per-wrap .per-stroe-list li .list-hide {
+        margin-top: 12px;
+        font-size: 14px; }
+        #per-wrap .per-stroe-list li .list-hide p {
+          color: red; }
+        #per-wrap .per-stroe-list li .list-hide span {
+          display: inline-block;
+          height: 20px;
+          border: 1px solid #ccc;
+          border-radius: 18px;
+          color: #888;
+          font-size: 12px;
+          padding: 2px 18px;
+          margin: 40px 10px;
+          cursor: pointer; }
+        #per-wrap .per-stroe-list li .list-hide span:nth-child(3) {
+          background: red;
+          color: #fff; }

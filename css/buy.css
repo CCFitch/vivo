@@ -16,7 +16,6 @@ li{
 }
 #b-header{
 	height:100px;
-	background: #333333;
 }
 
 
@@ -73,6 +72,9 @@ li{
 	width:85px;
 	height:85px;
 }
+#b-main .imgsbox .store{
+	margin-right:170px;
+}
 
 #b-main .rigthbox{
 	float:right;
@@ -82,6 +84,10 @@ li{
 	font-size:34px;
 	font-weight:500;
 	margin-top:10px;
+}
+#b-main .rigthbox .promotion{
+	color:red;
+	line-height:16px;
 }
 #b-main .rigthbox p{
 	font-size:14px;
@@ -105,18 +111,61 @@ li{
 	margin-top:0;
 }
 .support{
-	overflow: hidden;
 	font-size:16px;
 	padding: 10px 0 30px 0;
 }
 .support ul{
 	display:inline-block;
+	position:relative;
 }
 .support ul li{
 	display:inline-block;
 	margin-left:20px;
 	padding-bottom: 24px;
+	cursor: pointer;
+	line-height:20px;
 }
+.support ul li i{
+	color:red;
+	font-size: 18px;
+	margin-right:2px;
+}
+.support .supportbox{
+	width:438px;
+	height:140px;
+	position:absolute;
+	left:-148px;
+	top:10px;
+	z-index:1px;
+	display: none;
+}
+.support .supportbox1{
+	width:0;
+	height:0;
+	border-bottom:10px solid #fff;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-top:10px solid transparent;
+	margin:0 auto;
+	position:relative;
+	z-index:10;
+}
+.support .supportbox2{
+	width:300px;
+	height:130px;
+	box-shadow:0 0 7px 5px rgba(0,0,0,0.2);
+	background:#fff;
+	padding-left:38px;
+}
+.support .supportbox2 h5{
+	padding-top:28px;
+}
+.support .supportbox2 i{
+	color:red;
+	font-size: 18px;
+	margin-right:2px;
+}
+
 .message dt{
 	font-size:19px;
 	margin:20px 0;
@@ -165,7 +214,7 @@ li{
 }
 .message .amount dd{
 	border:none;
-	
+	width:400px;
 }
 .message .amount dd input{
 	line-height: 58px;
@@ -177,7 +226,18 @@ li{
 	float:left;
 	cursor: pointer;
 }
+.message .amount .remind{
+	color:red;
+	line-height: 58px;
+	display:none;
+}
 
+.message .instalment .icon-ziyuan1{
+	color:royalblue;
+	font-size:25px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
 .message .instalment dd{
 	width:245px;
 	height:90px;
@@ -191,8 +251,17 @@ li{
 .message .instalment span{
 	font-size:13px;
 }
-.instalment1,.instalment2,.instalment3,.instalment4{
-	font-size:15px;
+.message .instalment .instalment1{
+	font-size:16px;
+}
+.message .instalment .instalment2{
+	font-size:16px;
+}
+.message .instalment .instalment3{
+	font-size:16px;
+}
+.message .instalment .instalment4{
+	font-size:16px;
 }
 .message .instalment dd:hover{
 	color:red;

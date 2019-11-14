@@ -2,8 +2,8 @@
   width: 100%;
   height: 68px;
   position: fixed;
-  top: 0;
-  z-index: 99; }
+  top: 105px;
+  z-index: 3; }
   .s_headerT .s_header {
     width: 1200px;
     margin: 0 auto;
@@ -49,9 +49,9 @@
     cursor: pointer; }
 
 .s_pin1 {
-  margin: 0 auto;
+  margin: 68px auto 0;
   position: relative;
-  z-index: 1; }
+  z-index: -2; }
   .s_pin1 img {
     width: 100%;
     height: 864px; }
@@ -483,6 +483,41 @@
       display: none; }
       .s_pin3-8 .s_pin8 .s_pin8-6 p {
         font-size: 20px; }
+  .s_pin3-8 .s_pin9 {
+    width: 100%;
+    min-height: 617px;
+    background-color: #fff;
+    position: relative; }
+    .s_pin3-8 .s_pin9 .s_pin9one {
+      position: absolute;
+      top: 88px;
+      left: 442px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center; }
+      .s_pin3-8 .s_pin9 .s_pin9one h2 {
+        font-size: 50px; }
+    .s_pin3-8 .s_pin9 .s_pin9two {
+      width: 456px;
+      height: 304px;
+      position: absolute;
+      top: 215px;
+      left: 456px; }
+      .s_pin3-8 .s_pin9 .s_pin9two img {
+        width: 100%;
+        height: 100%; }
+    .s_pin3-8 .s_pin9 .s_pin9three {
+      width: 100%;
+      height: 617px;
+      opacity: 0.1; }
+      .s_pin3-8 .s_pin9 .s_pin9three video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
   .s_pin3-8 .s_service {
     position: relative;
     overflow: hidden;
